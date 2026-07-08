@@ -199,7 +199,7 @@ export const services: Service[] = [
     description:
       "Lighter, camera-ready glam for mehendi, haldi and sangeet functions — vibrant, long-lasting and comfortable for hours of dancing and celebration.",
     image:
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1200&auto=format&fit=crop",
     duration: "2 hours",
     priceFrom: 6000,
     features: [
@@ -292,7 +292,7 @@ export const services: Service[] = [
     description:
       "A brightening facial using vitamin-C actives to even out tone and lift dullness — the go-to choice before any event.",
     image:
-      "https://images.unsplash.com/photo-1616394158624-6a5ce8bcf7ca?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571875257727-256c39da42af?q=80&w=1200&auto=format&fit=crop",
     duration: "60 min",
     priceFrom: 1500,
     features: [
@@ -416,7 +416,7 @@ export const services: Service[] = [
     description:
       "Traditional hot-towel shave paired with expert beard sculpting for a clean, defined finish.",
     image:
-      "https://images.unsplash.com/photo-1521490878406-1e60f5cd0f0c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop",
     duration: "30 min",
     priceFrom: 350,
     features: ["Hot towel prep", "Beard shaping", "Aftershave balm"],
@@ -543,7 +543,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1000&auto=format&fit=crop",
     alt: "Bride with traditional Kerala jewellery",
     category: "Bridal",
   },
@@ -561,7 +561,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1616394158624-6a5ce8bcf7ca?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571875257727-256c39da42af?q=80&w=1000&auto=format&fit=crop",
     alt: "Brightening facial treatment",
     category: "Facial",
   },
@@ -579,7 +579,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1470259078422-0dab66f1d1e5?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=1000&auto=format&fit=crop",
     alt: "Salon styling station",
     category: "Salon",
   },
@@ -790,7 +790,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Not all facials are created equal. Here's how to match your skin concern to the right treatment.",
     coverImage:
-      "https://images.unsplash.com/photo-1616394158624-6a5ce8bcf7ca?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571875257727-256c39da42af?q=80&w=1200&auto=format&fit=crop",
     date: "2026-04-18",
     author: "Divya Prakash",
     readTime: "7 min read",
