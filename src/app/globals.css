@@ -1,26 +1,190 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffaf9;
+  --foreground: #2b1420;
+
+  --primary: #d6336c;
+  --primary-foreground: #fff5f9;
+  --secondary: #fde7f0;
+  --secondary-foreground: #7a1f47;
+  --accent: #c9a24b;
+  --accent-foreground: #2b1420;
+
+  --muted: #fbeef3;
+  --muted-foreground: #7a5568;
+
+  --card: #ffffff;
+  --card-foreground: #2b1420;
+
+  --border: #f3d3e1;
+  --input: #f3d3e1;
+  --ring: #d6336c;
+
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+
+  --radius: 0.75rem;
+
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-poppins);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+
+  --animate-fade-up: fade-up 0.8s ease-out both;
+  --animate-fade-in: fade-in 1s ease-out both;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shimmer: shimmer 2.5s linear infinite;
+  --animate-accordion-down: accordion-down 0.25s ease-out;
+  --animate-accordion-up: accordion-up 0.25s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-18px) rotate(2deg);
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif), ui-serif, serif;
+}
+
+.font-serif-display {
+  font-family: var(--font-serif), ui-serif, serif;
+}
+
+.text-gradient-pink {
+  background: linear-gradient(120deg, #d6336c 0%, #f06595 50%, #c9a24b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-hero-glow {
+  background: radial-gradient(
+      60% 60% at 20% 20%,
+      rgba(214, 51, 108, 0.14) 0%,
+      rgba(214, 51, 108, 0) 60%
+    ),
+    radial-gradient(
+      50% 50% at 85% 30%,
+      rgba(201, 162, 75, 0.12) 0%,
+      rgba(201, 162, 75, 0) 60%
+    ),
+    radial-gradient(
+      70% 60% at 50% 100%,
+      rgba(253, 231, 240, 0.9) 0%,
+      rgba(255, 250, 249, 0) 60%
+    );
+}
+
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #7a1f47 0%,
+    #d6336c 25%,
+    #f4c9dc 50%,
+    #d6336c 75%,
+    #7a1f47 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
 }
