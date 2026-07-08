@@ -29,11 +29,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            For over a decade, Lakmia Beauty Parlour has turned Kannur&apos;s
-            biggest moments — weddings, festivals, first days, quiet
-            Tuesdays — into stories worth remembering. Bridal artistry, hair,
-            skin and spa, crafted with the precision of a global studio and
-            the warmth of home.
+            Lakmia Beauty Parlour turns Trikaripur&apos;s biggest moments —
+            weddings, festivals, first days, quiet Tuesdays — into stories
+            worth remembering. Certified bridal artistry, hair, facial and
+            nail care, crafted with precision and genuine warmth.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -117,7 +116,7 @@ export default function Hero() {
                 ))}
               </div>
               <p className="text-xs font-medium text-foreground">
-                28,000+ Happy Clients
+                Loved by Our Clients
               </p>
             </div>
           </motion.div>
@@ -129,8 +128,8 @@ export default function Hero() {
             className="animate-float absolute -right-4 -top-6 rounded-2xl border border-border bg-white/95 px-5 py-3 shadow-xl backdrop-blur sm:-right-8"
             style={{ animationDelay: "1.5s" }}
           >
-            <p className="font-serif-display text-xl font-bold text-primary">12+</p>
-            <p className="text-[11px] text-muted-foreground">Years of Artistry</p>
+            <p className="font-serif-display text-xl font-bold text-primary">30+</p>
+            <p className="text-[11px] text-muted-foreground">Beauty & Bridal Services</p>
           </motion.div>
         </motion.div>
       </div>

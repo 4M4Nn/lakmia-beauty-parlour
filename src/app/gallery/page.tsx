@@ -5,9 +5,9 @@ import CtaBanner from "@/components/home/CtaBanner";
 import { galleryItems } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Gallery — Bridal, Hair & Spa Portfolio",
+  title: "Gallery — Bridal, Hair & Facial Portfolio",
   description:
-    "Browse real transformations from Lakmia Beauty Parlour, Thrikaripur — bridal makeovers, hair styling, facials, spa rituals and our Kannur studio.",
+    "Browse real transformations from Lakmia Beauty Parlour, Trikaripur — bridal makeup, hair styling, facials, nail care and our Kasaragod studio.",
   alternates: { canonical: "/gallery" },
 };
 

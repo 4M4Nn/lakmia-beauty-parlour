@@ -7,7 +7,7 @@ import { blogPosts } from "@/lib/data";
 export const metadata: Metadata = {
   title: "The Journal — Beauty Tips & Stories",
   description:
-    "Bridal advice, hair and skin care tips tailored to Kerala's climate, and stories from the Lakmia Beauty Parlour team in Thrikaripur, Kannur.",
+    "Bridal advice, hair and skin care tips tailored to Kerala's climate, and stories from Jisha Korambath at Lakmia Beauty Parlour, Trikaripur, Kasaragod.",
   alternates: { canonical: "/blog" },
 };
 
@@ -17,7 +17,7 @@ export default function BlogPage() {
       <PageHero
         eyebrow="The Journal"
         title="Stories, Tips & Beauty Wisdom"
-        description="Written by our own stylists and therapists — practical advice, real experience, no filler."
+        description="Written by Jisha Korambath and the Lakmia team — practical advice, real experience, no filler."
         image="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1600&auto=format&fit=crop"
       />
 

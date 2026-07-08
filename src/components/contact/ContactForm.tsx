@@ -6,7 +6,7 @@ import { CheckCircle2, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { services } from "@/lib/data";
+import { serviceCategories } from "@/lib/data";
 
 type FormState = {
   name: string;
@@ -149,10 +149,14 @@ export default function ContactForm() {
           aria-invalid={!!errors.service}
         >
           <option value="">Select a service</option>
-          {services.map((s) => (
-            <option key={s.slug} value={s.name}>
-              {s.name}
-            </option>
+          {serviceCategories.map((group) => (
+            <optgroup key={group.category} label={group.category}>
+              {group.services.map((s) => (
+                <option key={s.slug} value={s.name}>
+                  {s.name}
+                </option>
+              ))}
+            </optgroup>
           ))}
         </select>
         {errors.service && <p className="mt-1 text-xs text-destructive">{errors.service}</p>}

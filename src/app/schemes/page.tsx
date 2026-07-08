@@ -9,19 +9,36 @@ import { schemes } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Schemes & Membership Plans",
+  title: "Schemes & Bundle Packages",
   description:
-    "Explore Lakmia Beauty Parlour's bridal packages, grooming plans and the Lakmia Elite annual membership — designed around every kind of story.",
+    "Explore Lakmia Beauty Parlour's bridal bundles, groom-ready packages and glow starter offers — designed around every kind of story.",
   alternates: { canonical: "/schemes" },
 };
 
 export default function SchemesPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    name: "Lakmia Beauty Parlour Bundle Packages",
+    itemListElement: schemes.map((scheme) => ({
+      "@type": "Offer",
+      name: scheme.name,
+      description: scheme.description,
+      price: scheme.price,
+      priceCurrency: "INR",
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <PageHero
-        eyebrow="Schemes & Memberships"
-        title="A Plan for Every Chapter"
-        description="From a single glow-up to a full year of self-care, choose the plan that matches your story."
+        eyebrow="Schemes & Bundles"
+        title="A Package for Every Chapter"
+        description="From a single glow-up to your full wedding-day bundle, choose the package that matches your story."
         image="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=1600&auto=format&fit=crop"
       />
 

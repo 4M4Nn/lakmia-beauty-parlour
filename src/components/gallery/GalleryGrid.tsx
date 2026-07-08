@@ -6,7 +6,7 @@ import TiltCard from "@/components/ui/TiltCard";
 import { cn } from "@/lib/utils";
 import type { GalleryItem } from "@/types";
 
-const categories = ["All", "Bridal", "Hair", "Facial", "Spa", "Salon"] as const;
+const categories = ["All", "Bridal", "Hair", "Facial", "Nails", "Salon"] as const;
 
 export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
   const [active, setActive] = useState<(typeof categories)[number]>("All");

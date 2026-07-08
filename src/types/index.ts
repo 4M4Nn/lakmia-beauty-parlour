@@ -6,12 +6,13 @@ export interface NavLink {
 export interface Service {
   slug: string;
   name: string;
-  category: "Hair" | "Bridal" | "Skin & Facial" | "Spa & Body" | "Grooming" | "Nails";
+  category: "Hair" | "Makeup & Bridal" | "Facial & Skin" | "Nails" | "Waxing" | "Specialty";
   shortDescription: string;
   description: string;
   image: string;
-  duration: string;
   priceFrom: number;
+  priceTo?: number;
+  priceNote?: string;
   features: string[];
   popular?: boolean;
 }
@@ -79,13 +80,13 @@ export interface Scheme {
 export interface FaqItem {
   question: string;
   answer: string;
-  category: "General" | "Bridal" | "Hair & Skin" | "Membership" | "Booking";
+  category: "General" | "Bridal" | "Hair & Skin" | "Booking";
 }
 
 export interface GalleryItem {
   image: string;
   alt: string;
-  category: "Bridal" | "Hair" | "Facial" | "Salon" | "Spa";
+  category: "Bridal" | "Hair" | "Facial" | "Salon" | "Nails";
 }
 
 export interface SocialLink {

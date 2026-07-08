@@ -6,7 +6,7 @@ import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import BlogCard from "@/components/shared/BlogCard";
 import CtaBanner from "@/components/home/CtaBanner";
-import { blogPosts } from "@/lib/data";
+import { blogPosts, siteConfig } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -55,7 +55,15 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.excerpt,
     image: post.coverImage,
     datePublished: post.date,
-    author: { "@type": "Person", name: post.author },
+    author:
+      post.author === siteConfig.founderName
+        ? { "@type": "Person", name: post.author, jobTitle: "Certified Makeup Artist & Hairstylist" }
+        : { "@type": "Organization", name: post.author },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+    },
+    mainEntityOfPage: `https://lakmia-beauty-parlour.vercel.app/blog/${post.slug}`,
   };
 
   return (

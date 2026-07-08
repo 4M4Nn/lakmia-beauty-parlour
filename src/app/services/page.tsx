@@ -5,9 +5,9 @@ import CtaBanner from "@/components/home/CtaBanner";
 import { serviceCategories } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Our Services — Bridal, Hair, Skin & Spa",
+  title: "Our Services — Bridal, Hair, Facial & Nail Care",
   description:
-    "Explore Lakmia Beauty Parlour's full service menu in Thrikaripur, Kannur — bridal makeovers, haircuts, colour, keratin, facials, spa rituals, grooming and nail art.",
+    "Explore Lakmia Beauty Parlour's full service menu in Trikaripur, Kasaragod — bridal & party makeup, haircuts, protein treatments, facials, waxing and nail care.",
   alternates: { canonical: "/services" },
 };
 

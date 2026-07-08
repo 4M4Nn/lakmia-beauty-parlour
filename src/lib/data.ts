@@ -17,29 +17,36 @@ export const siteConfig = {
   name: "Lakmia Beauty Parlour",
   tagline: "Where Every Story Becomes Beautiful",
   description:
-    "Kerala's premier bridal, hair, skin and spa destination in Thrikaripur, Kannur.",
-  address: "Near Thrikaripur Junction, Thrikaripur, Kannur, Kerala 671310",
-  phone: "+91 94960 12345",
-  phoneHref: "+919496012345",
-  whatsapp: "+91 94960 12345",
-  whatsappHref: "919496012345",
-  email: "hello@lakmiabeauty.in",
+    "Certified bridal, hair, skin and nail care by Jisha Korambath at Lakmia Beauty Lounge, Trikaripur, Kasaragod, Kerala.",
+  address:
+    "Lakmia Beauty Lounge, 1st Floor, Burj Trikaripur, Trikaripur, Kasaragod (Dt), Kerala 671310",
+  phone: "+91 96565 48838",
+  phoneHref: "+919656548838",
+  whatsapp: "+91 96565 48838",
+  whatsappHref: "919656548838",
+  email: "kjisha969@gmail.com",
+  instagramHandle: "@lakmia_salon_trikaripur_",
+  instagramUrl: "https://instagram.com/lakmia_salon_trikaripur_",
+  founderName: "Jisha Korambath",
+  founderTitle: "Founder — Certified Makeup Artist & Hairstylist",
   hours: [
     { day: "Monday – Saturday", time: "9:30 AM – 8:30 PM" },
     { day: "Sunday", time: "10:00 AM – 6:00 PM" },
   ],
-  mapQuery: "Thrikaripur, Kannur, Kerala 671310",
+  mapQuery: "Burj Trikaripur, Trikaripur, Kasaragod, Kerala 671310",
 };
 
 export const socialLinks: SocialLink[] = [
-  { label: "Instagram", href: "https://instagram.com", icon: "instagram" },
-  { label: "Facebook", href: "https://facebook.com", icon: "facebook" },
+  {
+    label: "Instagram",
+    href: siteConfig.instagramUrl,
+    icon: "instagram",
+  },
   {
     label: "WhatsApp",
-    href: "https://wa.me/919496012345",
+    href: `https://wa.me/${siteConfig.whatsappHref}`,
     icon: "whatsapp",
   },
-  { label: "YouTube", href: "https://youtube.com", icon: "youtube" },
 ];
 
 export const navLinks: NavLink[] = [
@@ -54,419 +61,483 @@ export const navLinks: NavLink[] = [
 ];
 
 export const stats: StatItem[] = [
-  { label: "Years of Artistry", value: 12, suffix: "+" },
-  { label: "Brides Transformed", value: 3200, suffix: "+" },
-  { label: "Happy Clients", value: 28000, suffix: "+" },
-  { label: "Awards & Recognitions", value: 9, suffix: "" },
+  { label: "Beauty & Bridal Services", value: 30, suffix: "+" },
+  { label: "Facial Treatment Options", value: 9, suffix: "" },
+  { label: "Bridal & Party Makeup Looks", value: 7, suffix: "" },
+  { label: "Service Categories", value: 6, suffix: "" },
 ];
 
 export const milestones: Milestone[] = [
   {
-    year: "2013",
-    title: "A Dream Takes Root",
+    year: "Chapter One",
+    title: "A Certified Beginning",
     description:
-      "Founder Lakshmi Menon returned to Thrikaripur after training under celebrity stylists in Bangalore and Dubai, opening a modest two-chair studio with a single promise — to bring international technique to her home soil.",
+      "Jisha Korambath, a certified makeup artist and hairstylist, opens Lakmia Beauty Lounge on the 1st floor of Burj Trikaripur — with one goal: bringing genuinely certified, professional beauty expertise to her hometown.",
   },
   {
-    year: "2016",
-    title: "The Bridal Reputation Begins",
+    year: "Chapter Two",
+    title: "Built on Word of Mouth",
     description:
-      "A single viral bridal transformation at a Kannur wedding put Lakmia on the map. Brides began travelling from Kasaragod, Kozhikode and even the Gulf to be styled here before their big day.",
+      "No shortcuts, no gimmicks — just real transformations. Brides, party guests and everyday clients start recommending Lakmia to family and friends across Trikaripur and beyond.",
   },
   {
-    year: "2019",
-    title: "The Studio Doubles",
+    year: "Chapter Three",
+    title: "A Menu That Keeps Growing",
     description:
-      "Lakmia expanded into a full-floor studio with dedicated bridal suites, a private grooming lounge for grooms, and Kerala's first hair-spa bar outside the district capitals.",
-  },
-  {
-    year: "2022",
-    title: "Recognised Beyond Kannur",
-    description:
-      "Featured by regional bridal magazines and awarded 'Emerging Salon of the Year – North Kerala', Lakmia's technique-first, story-first philosophy earned recognition alongside metro-city names.",
+      "From a simple haircut to full bridal HD glam, from a quick clean-up to advanced hair protein treatments — the service menu expands to cover nearly every beauty need under one roof.",
   },
   {
     year: "Today",
-    title: "Your Story, Next",
+    title: "Every Story, Personally",
     description:
-      "A 20-member team of colourists, bridal artists, therapists and groomers now carries forward one belief — that every client walks in with a story, and walks out wearing it with confidence.",
+      "Every client at Lakmia is still attended to with the same personal, certified care the studio was built on — because a good beauty studio should feel like it was made just for you.",
   },
 ];
 
 export const teamMembers: TeamMember[] = [
   {
-    name: "Lakshmi Menon",
-    role: "Founder & Creative Director",
-    bio: "Trained in advanced colour theory and bridal editorial styling, Lakshmi has personally styled over 1,200 brides across North Kerala and mentors every artist who joins the Lakmia family.",
+    name: siteConfig.founderName,
+    role: siteConfig.founderTitle,
+    bio: "A certified makeup artist and hairstylist, Jisha founded Lakmia Beauty Lounge to bring professional, certified bridal and beauty artistry to Trikaripur — personally attending to brides, grooms and everyday clients with the same care and attention to detail.",
     image:
       "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=800&auto=format&fit=crop",
-    specialty: "Bridal Direction & Colour Artistry",
-  },
-  {
-    name: "Arjun Nair",
-    role: "Senior Hair Stylist",
-    bio: "A precision-cut specialist with a decade of experience across Kochi and Bangalore studios, Arjun leads Lakmia's men's grooming lounge and modern texture cutting.",
-    image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
-    specialty: "Precision Cuts & Men's Grooming",
-  },
-  {
-    name: "Fathima Rasheed",
-    role: "Lead Bridal Makeup Artist",
-    bio: "Fathima's HD and airbrush bridal work has been the highlight of over 400 Kannur weddings, blending traditional Kerala bridal aesthetics with contemporary finish.",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop",
-    specialty: "HD Bridal Makeup",
-  },
-  {
-    name: "Divya Prakash",
-    role: "Senior Skin & Spa Therapist",
-    bio: "A certified aesthetician specialising in Kerala Ayurveda-infused facials and therapeutic spa rituals that restore skin long after wedding season ends.",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
-    specialty: "Facials & Ayurvedic Spa",
+    specialty: "Bridal Makeup & Hairstyling",
   },
 ];
 
 export const services: Service[] = [
-  // Bridal
-  {
-    slug: "signature-bridal-makeover",
-    name: "Signature Bridal Makeover",
-    category: "Bridal",
-    shortDescription:
-      "Full-day HD bridal makeup, hair styling and draping for your wedding morning.",
-    description:
-      "Our flagship bridal package covers everything from base prep to final draping — HD or airbrush makeup, bridal hairstyling with premium extensions, saree/lehenga draping, and a dedicated artist who stays with you until you leave for the mandapam.",
-    image:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
-    duration: "4–5 hours",
-    priceFrom: 15000,
-    features: [
-      "HD or airbrush makeup",
-      "Bridal hairstyling with extensions",
-      "Saree/lehenga draping",
-      "False lashes & touch-up kit",
-      "Dedicated artist on standby",
-    ],
-    popular: true,
-  },
-  {
-    slug: "pre-bridal-glow-package",
-    name: "Pre-Bridal Glow Package",
-    category: "Bridal",
-    shortDescription:
-      "A 4-session skin, hair and body prep journey in the month before your wedding.",
-    description:
-      "Designed as a month-long ritual, this package combines deep-cleansing facials, hair spa, manicure-pedicure and body polishing sessions timed perfectly so you glow on cue for your big day.",
-    image:
-      "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=1200&auto=format&fit=crop",
-    duration: "4 sessions over 4 weeks",
-    priceFrom: 12000,
-    features: [
-      "3 brightening facials",
-      "2 hair spa sessions",
-      "Manicure & pedicure",
-      "Full body polishing",
-      "Personalised skincare plan",
-    ],
-  },
-  {
-    slug: "groom-grooming-package",
-    name: "Groom Grooming Package",
-    category: "Bridal",
-    shortDescription:
-      "Sharp haircut, beard sculpting, skin treatment and grooming for the groom.",
-    description:
-      "A dedicated grooming lounge experience for the groom — precision haircut, beard shaping, D-tan facial and a relaxing head massage so he looks as sharp as his story deserves.",
-    image:
-      "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop",
-    duration: "2–3 hours",
-    priceFrom: 4500,
-    features: [
-      "Precision haircut",
-      "Beard sculpting & styling",
-      "D-tan facial",
-      "Head massage",
-      "Grooming touch-up kit",
-    ],
-  },
-  {
-    slug: "mehendi-and-sangeet-look",
-    name: "Mehendi & Sangeet Look",
-    category: "Bridal",
-    shortDescription: "Festive makeup and hairstyling for pre-wedding functions.",
-    description:
-      "Lighter, camera-ready glam for mehendi, haldi and sangeet functions — vibrant, long-lasting and comfortable for hours of dancing and celebration.",
-    image:
-      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1200&auto=format&fit=crop",
-    duration: "2 hours",
-    priceFrom: 6000,
-    features: [
-      "Festive makeup look",
-      "Braided/bun hairstyling",
-      "Optional saree/gown draping",
-      "Long-wear setting spray",
-    ],
-  },
   // Hair
   {
-    slug: "signature-haircut-styling",
-    name: "Signature Haircut & Styling",
+    slug: "hair-protein-treatment",
+    name: "Hair Protein Treatment (Nanoplastia / Botox / Keratin)",
     category: "Hair",
-    shortDescription: "Precision cutting consultation with blow-dry finish.",
+    shortDescription:
+      "Smoothening protein treatment — choose Nanoplastia, Hair Botox or Keratin.",
     description:
-      "A face-shape-led consultation followed by precision cutting and a salon-finish blow dry — the Lakmia signature cut that holds its shape for weeks.",
-    image:
-      "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop",
-    duration: "45–60 min",
-    priceFrom: 800,
-    features: [
-      "Face-shape consultation",
-      "Precision cutting",
-      "Wash & blow-dry finish",
-      "Style recommendation",
-    ],
-    popular: true,
-  },
-  {
-    slug: "global-hair-colour",
-    name: "Global Hair Colour",
-    category: "Hair",
-    shortDescription: "Full-head colour using ammonia-free international brands.",
-    description:
-      "Rich, dimensional colour using ammonia-free professional colour lines, customised to your skin tone with a gloss finish for long-lasting shine.",
-    image:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop",
-    duration: "2–3 hours",
-    priceFrom: 2500,
-    features: [
-      "Ammonia-free colour",
-      "Skin-tone matched shade",
-      "Gloss finish",
-      "Post-colour care kit",
-    ],
-  },
-  {
-    slug: "keratin-smoothening",
-    name: "Keratin Smoothening",
-    category: "Hair",
-    shortDescription: "Frizz-free, smooth, manageable hair for up to 6 months.",
-    description:
-      "Our keratin treatment tames frizz and adds a silky finish while keeping hair's natural movement — ideal for Kerala's humidity, with results lasting up to six months.",
+      "A deep protein-repair treatment that smoothens frizz and strengthens hair from within. Choose between Nanoplastia, Hair Botox or Keratin based on your hair type and the finish you want — our team will guide you to the right pick during consultation.",
     image:
       "https://images.unsplash.com/photo-1522336284037-91f7da073525?q=80&w=1200&auto=format&fit=crop",
-    duration: "3 hours",
-    priceFrom: 4500,
+    priceFrom: 6000,
     features: [
-      "Frizz control up to 6 months",
-      "Humidity resistant finish",
-      "Safe for coloured hair",
-      "Free aftercare consultation",
-    ],
-  },
-  {
-    slug: "luxury-hair-spa",
-    name: "Luxury Hair Spa",
-    category: "Hair",
-    shortDescription: "Deep conditioning ritual with scalp massage.",
-    description:
-      "A restorative ritual combining deep-conditioning masks, steam therapy and scalp massage to repair damage and restore natural shine.",
-    image:
-      "https://images.unsplash.com/photo-1519415943484-9fa1873496d4?q=80&w=1200&auto=format&fit=crop",
-    duration: "60 min",
-    priceFrom: 1200,
-    features: [
-      "Deep conditioning mask",
-      "Steam therapy",
-      "Scalp massage",
-      "Shine serum finish",
-    ],
-  },
-  // Skin & Facial
-  {
-    slug: "radiance-facial",
-    name: "Radiance Brightening Facial",
-    category: "Skin & Facial",
-    shortDescription: "Vitamin-C infused facial for instant glow.",
-    description:
-      "A brightening facial using vitamin-C actives to even out tone and lift dullness — the go-to choice before any event.",
-    image:
-      "https://images.unsplash.com/photo-1571875257727-256c39da42af?q=80&w=1200&auto=format&fit=crop",
-    duration: "60 min",
-    priceFrom: 1500,
-    features: [
-      "Vitamin-C infusion",
-      "Deep cleansing",
-      "Face massage",
-      "Instant glow finish",
+      "Choice of Nanoplastia, Botox or Keratin",
+      "Smoothens frizz, strengthens hair",
+      "Consultation included",
     ],
     popular: true,
   },
   {
-    slug: "ayurvedic-herbal-facial",
-    name: "Ayurvedic Herbal Facial",
-    category: "Skin & Facial",
-    shortDescription: "Traditional Kerala herbal facial for sensitive skin.",
+    slug: "advanced-haircut",
+    name: "Advanced Haircut",
+    category: "Hair",
+    shortDescription: "Precision haircut styled to suit your face and hair type.",
     description:
-      "Rooted in Kerala's Ayurvedic heritage, this facial uses herbal pastes and cooling oils to calm sensitive skin and restore its natural balance.",
+      "A precision haircut consultation and cut, finished with a styled blow-dry — for a fresh look that's easy to maintain.",
     image:
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
-    duration: "75 min",
-    priceFrom: 1800,
-    features: [
-      "Herbal paste treatment",
-      "Cooling oil massage",
-      "Suitable for sensitive skin",
-      "Chemical-free formulation",
-    ],
+      "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 800,
+    features: ["Consultation", "Precision cutting", "Styled finish"],
   },
   {
-    slug: "d-tan-body-polishing",
-    name: "D-Tan Body Polishing",
-    category: "Skin & Facial",
-    shortDescription: "Full-body de-tan and exfoliation treatment.",
+    slug: "hair-spa",
+    name: "Hair Spa",
+    category: "Hair",
+    shortDescription: "Deep-conditioning hair spa for softer, healthier hair.",
     description:
-      "An exfoliating body scrub and pack treatment that removes tan and dead skin, leaving skin soft, even-toned and photo-ready.",
+      "A relaxing, deep-conditioning hair spa treatment that restores moisture and shine — ideal as a regular maintenance ritual between bigger treatments.",
+    image:
+      "https://images.unsplash.com/photo-1519415943484-9fa1873496d4?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 1000,
+    priceNote: "onwards (normal spa)",
+    features: ["Deep conditioning mask", "Scalp massage", "Shine finish"],
+  },
+
+  // Makeup & Bridal
+  {
+    slug: "party-makeup",
+    name: "Party Makeup (Guest Look)",
+    category: "Makeup & Bridal",
+    shortDescription: "Camera-ready glam for weddings, parties and functions.",
+    description:
+      "A polished, long-lasting party makeup look for wedding guests and celebrations — vibrant, photo-ready and comfortable for a full evening out.",
+    image:
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 3000,
+    features: ["Long-wear finish", "Guest/function-ready glam"],
+  },
+  {
+    slug: "reception-look",
+    name: "Reception Look",
+    category: "Makeup & Bridal",
+    shortDescription: "Elegant post-wedding reception makeup and styling.",
+    description:
+      "A refined reception-day look, styled to complement your reception outfit — polished, elegant and made to last through photos and celebrations.",
+    image:
+      "https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 8000,
+    priceTo: 10000,
+    features: ["Full makeup & hairstyling", "Outfit-matched look"],
+  },
+  {
+    slug: "groom-makeup",
+    name: "Groom Makeup",
+    category: "Makeup & Bridal",
+    shortDescription: "Sharp, camera-ready makeup and grooming for the groom.",
+    description:
+      "A natural, camera-ready makeup application for grooms — subtle enough for everyday confidence, polished enough for wedding photography.",
+    image:
+      "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 4000,
+    features: ["Natural, camera-ready finish", "Long-lasting wear"],
+  },
+  {
+    slug: "bridal-hd-makeup",
+    name: "Bridal HD Makeup",
+    category: "Makeup & Bridal",
+    shortDescription: "High-definition bridal makeup for your wedding day.",
+    description:
+      "Full HD bridal makeup application designed to look flawless in person and in photographs — a Lakmia signature for wedding-day glamour.",
+    image:
+      "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 16000,
+    features: ["HD finish", "Long-wear bridal formula", "Touch-up kit included"],
+    popular: true,
+  },
+  {
+    slug: "signature-hd-makeup",
+    name: "Signature HD Makeup",
+    category: "Makeup & Bridal",
+    shortDescription: "Lakmia's premium signature HD bridal makeup experience.",
+    description:
+      "Our most detailed HD bridal makeup service, layered with premium techniques for a flawless, editorial-level bridal finish.",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 18000,
+    features: ["Premium HD techniques", "Editorial-level finish", "Extended wear"],
+  },
+  {
+    slug: "glass-skin-makeup",
+    name: "Glass Skin Makeup",
+    category: "Makeup & Bridal",
+    shortDescription: "Dewy, luminous \"glass skin\" bridal makeup finish.",
+    description:
+      "A luminous, dewy-skin finish inspired by the glass-skin trend — perfect for brides who want a fresh, radiant, barely-there-makeup look with maximum glow.",
+    image:
+      "https://images.unsplash.com/photo-1571875257727-256c39da42af?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 18000,
+    features: ["Dewy, luminous finish", "Skin-first technique"],
+  },
+  {
+    slug: "airbrush-makeup",
+    name: "Airbrush Makeup",
+    category: "Makeup & Bridal",
+    shortDescription: "Featherlight, flawless airbrush bridal makeup.",
+    description:
+      "Airbrush application for an ultra-lightweight, seamless bridal finish that photographs beautifully and lasts through a long wedding day.",
+    image:
+      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 21000,
+    features: ["Lightweight airbrush formula", "Seamless, photo-perfect finish"],
+  },
+  {
+    slug: "saree-draping-normal",
+    name: "Saree Draping (Normal)",
+    category: "Makeup & Bridal",
+    shortDescription: "Classic saree draping for everyday elegance.",
+    description: "Neat, classic saree draping for weddings, functions and everyday occasions.",
+    image:
+      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 600,
+    features: ["Classic drape style", "Secure, comfortable fit"],
+  },
+  {
+    slug: "saree-draping-box-folding",
+    name: "Saree Draping (Box Folding)",
+    category: "Makeup & Bridal",
+    shortDescription: "Structured box-fold saree draping style.",
+    description: "A neat, structured box-fold drape for a sharp, symmetrical saree silhouette.",
+    image:
+      "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 500,
+    features: ["Structured box-fold pleats", "Clean, symmetrical finish"],
+  },
+  {
+    slug: "saree-draping-fluffy-pleats",
+    name: "Saree Draping (Fluffy Pleats)",
+    category: "Makeup & Bridal",
+    shortDescription: "Voluminous fluffy-pleat saree draping for special occasions.",
+    description:
+      "A voluminous, fashion-forward fluffy-pleat drape for brides and guests who want extra flair on their saree look.",
+    image:
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 1500,
+    features: ["Voluminous pleat styling", "Statement bridal look"],
+  },
+
+  // Facial & Skin
+  {
+    slug: "hydra-facial",
+    name: "Hydra Facial",
+    category: "Facial & Skin",
+    shortDescription: "Deep-hydrating facial for instant glow.",
+    description:
+      "A deep-cleansing, deep-hydrating facial that leaves skin visibly refreshed and glowing — available in tiers based on the level of treatment.",
     image:
       "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop",
-    duration: "90 min",
-    priceFrom: 2200,
-    features: [
-      "Full-body scrub",
-      "De-tan pack",
-      "Moisturising wrap",
-      "Even-tone finish",
-    ],
+    priceFrom: 2000,
+    priceTo: 5000,
+    features: ["Deep hydration", "Instant glow", "Multiple treatment tiers"],
+    popular: true,
   },
   {
-    slug: "anti-ageing-facial",
-    name: "Anti-Ageing Collagen Facial",
-    category: "Skin & Facial",
-    shortDescription: "Firming facial with collagen-boosting actives.",
+    slug: "shahnaz-facial",
+    name: "Shahnaz Facial",
+    category: "Facial & Skin",
+    shortDescription: "Herbal-based Shahnaz facial for a natural glow.",
     description:
-      "A results-driven facial using peptide and collagen-boosting actives to firm, lift and reduce the appearance of fine lines.",
+      "A herbal-based facial treatment known for gently brightening and refreshing the skin using natural, time-tested techniques.",
     image:
       "https://images.unsplash.com/photo-1598452963314-b09f397a5c48?q=80&w=1200&auto=format&fit=crop",
-    duration: "75 min",
-    priceFrom: 2800,
-    features: [
-      "Peptide infusion",
-      "Firming massage technique",
-      "Collagen mask",
-      "LED finishing (select branches)",
-    ],
+    priceFrom: 2500,
+    features: ["Herbal-based formula", "Gentle brightening"],
   },
-  // Spa & Body
   {
-    slug: "aroma-body-massage",
-    name: "Aroma Therapy Body Massage",
-    category: "Spa & Body",
-    shortDescription: "Full-body relaxation massage with essential oils.",
+    slug: "vitamin-c-facial",
+    name: "Vitamin C Facial",
+    category: "Facial & Skin",
+    shortDescription: "Brightening facial with vitamin C actives.",
     description:
-      "A full-body massage using essential-oil blends to relieve tension, improve circulation and leave you deeply relaxed.",
+      "A brightening facial using vitamin C to even out tone and lift dullness — a great pick before any event.",
+    image:
+      "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 2000,
+    features: ["Vitamin C infusion", "Brightens & evens tone"],
+  },
+  {
+    slug: "aroma-facial",
+    name: "Aroma Facial",
+    category: "Facial & Skin",
+    shortDescription: "Relaxing aroma-therapy facial treatment.",
+    description:
+      "A calming facial built around aromatic actives, designed to relax while it refreshes tired-looking skin.",
     image:
       "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop",
-    duration: "60 min",
-    priceFrom: 2000,
-    features: [
-      "Essential oil blend",
-      "Full-body technique",
-      "Stress-relief focus",
-      "Herbal tea post-session",
-    ],
+    priceFrom: 2500,
+    features: ["Aromatic actives", "Relaxing application"],
   },
   {
-    slug: "royal-spa-ritual",
-    name: "Royal Spa Ritual",
-    category: "Spa & Body",
-    shortDescription: "A complete 3-hour pampering journey.",
+    slug: "bridal-glow-facial",
+    name: "Bridal Glow Facial",
+    category: "Facial & Skin",
+    shortDescription: "Pre-bridal facial designed for that wedding-day glow.",
     description:
-      "Our most indulgent offering — body scrub, wrap, massage and facial combined into one three-hour journey designed for complete renewal.",
+      "A facial specifically designed for brides-to-be, timed in the run-up to the wedding for a natural, camera-ready glow.",
     image:
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
-    duration: "3 hours",
-    priceFrom: 5500,
-    features: [
-      "Body scrub & wrap",
-      "Full massage",
-      "Express facial",
-      "Complimentary refreshments",
-    ],
-  },
-  // Grooming
-  {
-    slug: "classic-mens-haircut",
-    name: "Classic Men's Haircut",
-    category: "Grooming",
-    shortDescription: "Sharp, styled haircut for the modern man.",
-    description:
-      "A precision men's haircut finished with styling products suited to your hair type and lifestyle.",
-    image:
-      "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1200&auto=format&fit=crop",
-    duration: "30 min",
-    priceFrom: 400,
-    features: ["Consultation", "Precision cut", "Styling finish"],
+      "https://images.unsplash.com/photo-1600718374662-0483d2b9da44?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 2500,
+    features: ["Pre-bridal glow prep", "Camera-ready finish"],
   },
   {
-    slug: "beard-sculpting",
-    name: "Beard Sculpting & Shave",
-    category: "Grooming",
-    shortDescription: "Hot towel shave and beard shaping.",
+    slug: "o3-plus-facial",
+    name: "O3+ Facial",
+    category: "Facial & Skin",
+    shortDescription: "Advanced O3+ facial for deeper skin renewal.",
     description:
-      "Traditional hot-towel shave paired with expert beard sculpting for a clean, defined finish.",
+      "An advanced facial treatment using the O3+ range for deeper cleansing and visible skin renewal.",
     image:
-      "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop",
-    duration: "30 min",
-    priceFrom: 350,
-    features: ["Hot towel prep", "Beard shaping", "Aftershave balm"],
+      "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 3500,
+    features: ["Advanced O3+ range", "Deep skin renewal"],
   },
+  {
+    slug: "pimple-treatment",
+    name: "Pimple Treatment",
+    category: "Facial & Skin",
+    shortDescription: "Targeted treatment for active breakouts.",
+    description:
+      "A focused treatment for active breakouts and pimple-prone skin, aimed at calming irritation and reducing recurrence.",
+    image:
+      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 1500,
+    features: ["Targeted spot treatment", "Calms active breakouts"],
+  },
+  {
+    slug: "acne-facial",
+    name: "Acne Facial",
+    category: "Facial & Skin",
+    shortDescription: "Deep-cleansing facial for acne-prone skin.",
+    description:
+      "A deep-cleansing facial formulated for acne-prone skin, helping to clear congestion while keeping skin calm and balanced.",
+    image:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 3000,
+    features: ["Deep-cleansing formula", "Suited to acne-prone skin"],
+  },
+  {
+    slug: "korean-facial",
+    name: "Korean Facial",
+    category: "Facial & Skin",
+    shortDescription: "Multi-step Korean-inspired glass-skin facial.",
+    description:
+      "A multi-step, Korean-inspired facial focused on hydration and that sought-after glass-skin glow.",
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 3000,
+    features: ["Multi-step routine", "Hydration-first glow"],
+  },
+  {
+    slug: "clean-up",
+    name: "Clean Up",
+    category: "Facial & Skin",
+    shortDescription: "Quick refresh clean-up for everyday upkeep.",
+    description:
+      "A quick, effective clean-up to clear congestion and refresh the skin — perfect for regular upkeep between facials.",
+    image:
+      "https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 500,
+    features: ["Quick refresh", "Great for regular upkeep"],
+  },
+  {
+    slug: "clean-up-detan",
+    name: "Clean Up + De-tan (Bleach)",
+    category: "Facial & Skin",
+    shortDescription: "Clean-up combined with de-tan bleach treatment.",
+    description:
+      "Our clean-up service combined with a de-tanning bleach treatment for a brighter, more even-toned finish.",
+    image:
+      "https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 650,
+    features: ["Clean-up + de-tan combo", "Brighter, even-toned finish"],
+  },
+
   // Nails
   {
-    slug: "gel-manicure-pedicure",
-    name: "Gel Manicure & Pedicure",
+    slug: "manicure",
+    name: "Manicure",
     category: "Nails",
-    shortDescription: "Long-lasting gel polish with nail care ritual.",
+    shortDescription: "Hand care and nail grooming ritual.",
     description:
-      "A complete nail-care ritual with cuticle work, exfoliation and chip-resistant gel polish that lasts for weeks.",
+      "A complete manicure — cuticle care, shaping and polish — for neat, well-groomed hands.",
     image:
       "https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop",
-    duration: "75 min",
-    priceFrom: 1500,
-    features: ["Cuticle care", "Exfoliation", "Gel polish", "Hand & foot massage"],
+    priceFrom: 500,
+    features: ["Cuticle care", "Shaping & polish"],
   },
   {
-    slug: "bridal-nail-art",
-    name: "Bridal Nail Art",
+    slug: "pedicure",
+    name: "Pedicure",
     category: "Nails",
-    shortDescription: "Custom nail art to match your bridal theme.",
+    shortDescription: "Foot care and nail grooming ritual.",
     description:
-      "Delicate, custom nail art designed to complement your bridal outfit and jewellery — the finishing detail brides love in photographs.",
+      "A relaxing pedicure with exfoliation, foot massage and polish — a well-deserved reset for tired feet.",
     image:
       "https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1200&auto=format&fit=crop",
-    duration: "60 min",
-    priceFrom: 1800,
-    features: ["Custom design", "Gel application", "Rhinestone/foil accents"],
+    priceFrom: 1000,
+    features: ["Exfoliation & massage", "Neat polish finish"],
+    popular: true,
+  },
+
+  // Waxing
+  {
+    slug: "face-wax",
+    name: "Face Wax",
+    category: "Waxing",
+    shortDescription: "Gentle facial waxing for smooth skin.",
+    description: "Quick, gentle facial waxing for smooth, hair-free skin.",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 350,
+    features: ["Gentle technique", "Smooth finish"],
+  },
+  {
+    slug: "underarms-wax",
+    name: "Underarms Waxing",
+    category: "Waxing",
+    shortDescription: "Quick and gentle underarm waxing.",
+    description: "Fast, gentle underarm waxing for a clean, smooth finish.",
+    image:
+      "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 400,
+    features: ["Quick service", "Gentle on skin"],
+  },
+  {
+    slug: "full-leg-wax",
+    name: "Full Leg Waxing",
+    category: "Waxing",
+    shortDescription: "Complete leg waxing for smooth, hair-free skin.",
+    description: "Full-leg waxing from thigh to ankle for long-lasting smoothness.",
+    image:
+      "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 1500,
+    features: ["Full-leg coverage", "Long-lasting smoothness"],
+  },
+  {
+    slug: "full-hand-wax",
+    name: "Full Hand Waxing",
+    category: "Waxing",
+    shortDescription: "Complete arm waxing for smooth, hair-free skin.",
+    description: "Full-hand (arm) waxing for a clean, smooth finish from shoulder to wrist.",
+    image:
+      "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 1000,
+    features: ["Full-arm coverage", "Smooth, even finish"],
+  },
+  {
+    slug: "full-body-wax",
+    name: "Full Body Waxing",
+    category: "Waxing",
+    shortDescription: "Complete full-body waxing service.",
+    description: "A complete full-body waxing session for thorough, long-lasting smoothness.",
+    image:
+      "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 4000,
+    features: ["Complete full-body coverage", "Long-lasting results"],
+  },
+
+  // Specialty
+  {
+    slug: "microblading",
+    name: "Eyebrow Microblading",
+    category: "Specialty",
+    shortDescription: "Semi-permanent, natural-looking eyebrow enhancement.",
+    description:
+      "A semi-permanent microblading technique that fills and shapes eyebrows for a natural, defined look that lasts.",
+    image:
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 3000,
+    features: ["Semi-permanent technique", "Natural, defined shape"],
+  },
+  {
+    slug: "warts-removal",
+    name: "Warts Removal",
+    category: "Specialty",
+    shortDescription: "Quick, minor skin treatment to remove warts.",
+    description:
+      "A quick, minor skin treatment to safely remove warts, priced per wart.",
+    image:
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop",
+    priceFrom: 50,
+    priceNote: "per wart",
+    features: ["Quick, minor procedure", "Priced per wart"],
   },
 ];
 
 export const serviceCategories: ServiceCategoryGroup[] = [
-  "Bridal",
   "Hair",
-  "Skin & Facial",
-  "Spa & Body",
-  "Grooming",
+  "Makeup & Bridal",
+  "Facial & Skin",
   "Nails",
+  "Waxing",
+  "Specialty",
 ].map((category) => ({
   category: category as Service["category"],
   tagline:
     {
-      Bridal: "Your biggest day, told through every detail.",
-      Hair: "Cut, coloured and styled with editorial precision.",
-      "Skin & Facial": "Glow that starts with genuine skin care.",
-      "Spa & Body": "Slow down. Breathe. Be renewed.",
-      Grooming: "Sharp, clean, effortlessly confident.",
+      Hair: "Cut, treated and styled with certified technique.",
+      "Makeup & Bridal": "Every look, from guest glam to full bridal HD.",
+      "Facial & Skin": "Glow that starts with genuine skin care.",
       Nails: "The finishing touch that completes the look.",
+      Waxing: "Smooth, quick, and comfortable.",
+      Specialty: "The little details that make a big difference.",
     }[category as Service["category"]] ?? "",
   services: services.filter((s) => s.category === category),
 }));
@@ -476,9 +547,9 @@ export const testimonials: Testimonial[] = [
     name: "Anjali Suresh",
     location: "Kannur",
     quote:
-      "Lakmia didn't just do my bridal makeup — they understood the story I wanted my wedding day to tell. Three years later, people still talk about how radiant I looked.",
+      "My Bridal HD Makeup at Lakmia was exactly what I wanted — Jisha understood the look I was going for and executed it perfectly. Three years later, people still talk about how radiant I looked.",
     rating: 5,
-    service: "Signature Bridal Makeover",
+    service: "Bridal HD Makeup",
     image:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop",
   },
@@ -486,19 +557,19 @@ export const testimonials: Testimonial[] = [
     name: "Fathima Beevi",
     location: "Kasaragod",
     quote:
-      "I travelled 40km for my pre-bridal package and it was worth every kilometre. My skin has never looked this good, and the team made me feel completely at ease.",
+      "I did the Bridal Glow Facial in the weeks before my wedding and my skin has never looked better. The team made me feel completely at ease every visit.",
     rating: 5,
-    service: "Pre-Bridal Glow Package",
+    service: "Bridal Glow Facial",
     image:
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=400&auto=format&fit=crop",
   },
   {
     name: "Vishnu Prasad",
-    location: "Thrikaripur",
+    location: "Trikaripur",
     quote:
-      "The grooming lounge is a different experience altogether — sharp haircut, proper beard sculpting, none of the rush you get elsewhere.",
+      "Got my Groom Makeup and haircut done here before my wedding — natural finish, no rush, and it photographed beautifully.",
     rating: 5,
-    service: "Groom Grooming Package",
+    service: "Groom Makeup",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
   },
@@ -506,9 +577,9 @@ export const testimonials: Testimonial[] = [
     name: "Divya Menon",
     location: "Kannur",
     quote:
-      "Been coming here for hair spa and keratin for two years now. My hair has genuinely transformed, and the staff remember exactly what I like every single time.",
+      "Been coming here for the hair protein treatment for over a year now. My hair has genuinely transformed, and the results last for months.",
     rating: 5,
-    service: "Keratin Smoothening",
+    service: "Hair Protein Treatment",
     image:
       "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=400&auto=format&fit=crop",
   },
@@ -516,19 +587,19 @@ export const testimonials: Testimonial[] = [
     name: "Sreelakshmi Nair",
     location: "Payyanur",
     quote:
-      "The Ayurvedic facial is unlike anything else in the district — gentle, authentic, and my skin felt calm for weeks after. This is craftsmanship, not just a service.",
+      "The Korean Facial here is unlike anything else in the area — my skin felt hydrated and glowing for weeks after. Genuine craftsmanship, not just a service.",
     rating: 5,
-    service: "Ayurvedic Herbal Facial",
+    service: "Korean Facial",
     image:
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop",
   },
   {
     name: "Rahul Chandran",
-    location: "Kannur",
+    location: "Kasaragod",
     quote:
-      "Booked the Royal Spa Ritual after a stressful work quarter — genuinely one of the most relaxing three hours I've spent. Coming back monthly now.",
+      "Booked the Signature HD Makeup package for a family function and it was worth every rupee — detailed, patient work and a stunning final look.",
     rating: 5,
-    service: "Royal Spa Ritual",
+    service: "Signature HD Makeup",
     image:
       "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop",
   },
@@ -538,25 +609,25 @@ export const galleryItems: GalleryItem[] = [
   {
     image:
       "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop",
-    alt: "Bridal makeup application in progress",
+    alt: "Bridal HD makeup application in progress",
     category: "Bridal",
   },
   {
     image:
       "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1000&auto=format&fit=crop",
-    alt: "Bride with traditional Kerala jewellery",
+    alt: "Bride with traditional Kerala jewellery and saree draping",
     category: "Bridal",
   },
   {
     image:
       "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1000&auto=format&fit=crop",
-    alt: "Precision haircut styling session",
+    alt: "Advanced haircut styling session",
     category: "Hair",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1000&auto=format&fit=crop",
-    alt: "Hair colour application",
+      "https://images.unsplash.com/photo-1522336284037-91f7da073525?q=80&w=1000&auto=format&fit=crop",
+    alt: "Hair protein treatment session",
     category: "Hair",
   },
   {
@@ -568,13 +639,13 @@ export const galleryItems: GalleryItem[] = [
   {
     image:
       "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop",
-    alt: "Body polishing spa treatment",
-    category: "Spa",
+    alt: "Clean-up and de-tan skin treatment",
+    category: "Facial",
   },
   {
     image:
       "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000&auto=format&fit=crop",
-    alt: "Lakmia salon interior",
+    alt: "Lakmia Beauty Lounge studio interior",
     category: "Salon",
   },
   {
@@ -585,15 +656,15 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=1000&auto=format&fit=crop",
-    alt: "Pre-bridal skincare session",
-    category: "Bridal",
+      "https://images.unsplash.com/photo-1600718374662-0483d2b9da44?q=80&w=1000&auto=format&fit=crop",
+    alt: "Bridal glow facial session",
+    category: "Facial",
   },
   {
     image:
       "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1000&auto=format&fit=crop",
-    alt: "Aromatherapy massage treatment",
-    category: "Spa",
+    alt: "Aroma facial treatment",
+    category: "Facial",
   },
   {
     image:
@@ -603,9 +674,9 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1000&auto=format&fit=crop",
-    alt: "Bridal nail art detail",
-    category: "Bridal",
+      "https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1000&auto=format&fit=crop",
+    alt: "Bridal manicure detail",
+    category: "Nails",
   },
 ];
 
@@ -613,63 +684,62 @@ export const schemes: Scheme[] = [
   {
     slug: "glow-starter",
     name: "Glow Starter",
-    price: 1999,
-    billingNote: "one-time / valid 3 months",
-    description: "A perfect entry point to experience the Lakmia difference.",
+    price: 2999,
+    originalPrice: 3500,
+    billingNote: "one-time bundle",
+    description:
+      "A perfect entry point to experience Lakmia — skin, hair and hands, all in one visit.",
     features: [
-      "1 Radiance Brightening Facial",
-      "1 Luxury Hair Spa",
-      "1 Gel Manicure",
-      "10% off any single service",
+      "1 Vitamin C Facial",
+      "1 Hair Spa",
+      "1 Manicure",
     ],
   },
   {
     slug: "bridal-radiance-plan",
     name: "Bridal Radiance Plan",
     badge: "Most Booked",
-    price: 24999,
-    originalPrice: 32000,
-    billingNote: "complete package / valid until your wedding date",
+    price: 18499,
+    originalPrice: 20100,
+    billingNote: "complete bridal-day bundle",
     description:
-      "Our most comprehensive bridal journey — from first consultation to the final touch-up before you walk the aisle.",
+      "Our most-booked bridal bundle — HD makeup, saree draping, hair spa and a pre-glow facial, all in one package.",
     features: [
-      "Signature Bridal Makeover (wedding day)",
-      "Full Pre-Bridal Glow Package (4 sessions)",
-      "Mehendi/Sangeet look included",
-      "Complimentary trial session",
-      "Priority scheduling & dedicated artist",
+      "Bridal HD Makeup (wedding day)",
+      "Saree Draping (Normal)",
+      "1 Hair Spa session",
+      "1 Bridal Glow Facial",
     ],
     highlight: true,
   },
   {
-    slug: "lakmia-elite-membership",
-    name: "Lakmia Elite Membership",
-    badge: "Best Value",
-    price: 7999,
-    originalPrice: 11000,
-    billingNote: "annual membership",
+    slug: "signature-glam-package",
+    name: "Signature Glam Package",
+    badge: "Premium",
+    price: 20999,
+    originalPrice: 23000,
+    billingNote: "complete premium bundle",
     description:
-      "For clients who visit often — unlock a full year of preferential pricing and priority access.",
+      "For brides who want the full premium experience — Signature HD Makeup, statement draping and an advanced facial.",
     features: [
-      "15% off all services year-round",
-      "2 complimentary facials annually",
-      "1 complimentary hair spa quarterly",
-      "Priority appointment booking",
-      "Member-only festive offers",
+      "Signature HD Makeup (wedding day)",
+      "Saree Draping (Fluffy Pleats)",
+      "1 O3+ Facial",
     ],
   },
   {
     slug: "groom-ready-plan",
     name: "Groom Ready Plan",
     price: 6999,
-    billingNote: "one-time package",
+    originalPrice: 8150,
+    billingNote: "one-time bundle",
     description:
-      "A complete grooming journey for the groom, from skin prep to wedding-day sharpness.",
+      "A complete grooming bundle for the groom, from a fresh haircut to wedding-day makeup.",
     features: [
-      "3 grooming sessions before the wedding",
-      "1 Groom Grooming Package (wedding day)",
-      "D-tan & skin brightening included",
-      "Complimentary head massage each visit",
+      "Groom Makeup (wedding day)",
+      "1 Advanced Haircut",
+      "1 Face Wax",
+      "1 Acne Facial",
     ],
   },
 ];
@@ -678,67 +748,68 @@ export const faqs: FaqItem[] = [
   {
     question: "How far in advance should I book my bridal appointment?",
     answer:
-      "We recommend booking your bridal package at least 2–3 months in advance, especially during peak wedding season (November–February) when our bridal calendar fills quickly. A trial session is always included so we can perfect your look before the big day.",
+      "We recommend booking your bridal package at least 4–6 weeks in advance, especially during wedding season, so we can plan your look and confirm your preferred time slot.",
     category: "Bridal",
   },
   {
-    question: "Do you offer home/venue bridal services?",
+    question:
+      "What's the difference between Bridal HD, Signature HD, Glass Skin and Airbrush makeup?",
     answer:
-      "Yes, our bridal team travels to your venue or home across Kannur, Kasaragod and Kozhikode districts for an additional convenience fee. Please mention this while booking so we can plan artist travel time accordingly.",
+      "Bridal HD Makeup is our classic high-definition finish. Signature HD adds premium layering techniques for an editorial-level result. Glass Skin focuses on a dewy, luminous, skin-first finish. Airbrush uses a lightweight airbrush formula for an ultra-seamless look. We're happy to help you choose the right one for your skin and outfit during a consultation.",
     category: "Bridal",
   },
   {
-    question: "What hair colour brands do you use?",
+    question: "Do you offer home or venue bridal services?",
     answer:
-      "We exclusively use ammonia-free, internationally recognised professional colour lines that protect hair integrity while delivering rich, long-lasting colour and shine.",
+      "For home or venue bookings, please message us directly on WhatsApp or Instagram to check availability and any additional charges for your date and location.",
+    category: "Bridal",
+  },
+  {
+    question: "Which protein treatment should I choose — Nanoplastia, Botox or Keratin?",
+    answer:
+      "All three smoothen frizz and strengthen hair, but they differ in finish and hair-type suitability. During your visit, we'll assess your hair and recommend the best fit — all three are priced the same, so there's no wrong choice to try.",
     category: "Hair & Skin",
   },
   {
-    question: "Is the keratin treatment safe for previously coloured hair?",
+    question: "Which facial should I choose?",
     answer:
-      "Yes, our keratin smoothening treatment is safe for coloured or chemically treated hair. In fact, many clients find their colour looks glossier and lasts longer after keratin treatment.",
+      "It depends on your skin's need: Hydra Facial and Vitamin C Facial are great for a quick glow, Acne Facial and Pimple Treatment target breakouts, Korean Facial and O3+ Facial go deeper for hydration and renewal, and Bridal Glow Facial is timed specifically for upcoming events. Ask us at the front desk if you're unsure — we're happy to recommend.",
     category: "Hair & Skin",
   },
   {
-    question: "Do you have Ayurvedic or natural facial options?",
+    question: "Do you offer saree draping without makeup?",
     answer:
-      "Yes, our Ayurvedic Herbal Facial uses traditional Kerala herbal pastes and cooling oils, formulated to be gentle on sensitive skin while delivering visible results.",
-    category: "Hair & Skin",
-  },
-  {
-    question: "How does the Lakmia Elite Membership work?",
-    answer:
-      "The Elite Membership is an annual plan offering 15% off all services, complimentary facials and hair spa sessions through the year, and priority booking — ideal for clients who visit regularly.",
-    category: "Membership",
-  },
-  {
-    question: "Can membership benefits be shared with family?",
-    answer:
-      "Membership is registered to one individual, but we offer a Family Elite add-on at a discounted rate for immediate family members bundled under one account — ask our front desk for details.",
-    category: "Membership",
+      "Yes — saree draping (Normal, Box Folding or Fluffy Pleats) is available as a standalone service, no makeup booking required.",
+    category: "Booking",
   },
   {
     question: "What is your cancellation and rescheduling policy?",
     answer:
-      "We understand plans change. Appointments can be rescheduled free of charge with at least 24 hours' notice. Bridal package deposits are non-refundable but fully transferable to a new date within 6 months.",
+      "We understand plans change. Please inform us as early as possible if you need to reschedule, so we can offer your slot to another client and find you a new time that works.",
     category: "Booking",
   },
   {
     question: "Do I need to pay an advance to book?",
     answer:
-      "Single-service appointments do not require advance payment. Bridal packages and spa rituals require a 25% advance to confirm your artist and time slot.",
+      "Single-service appointments generally don't require advance payment. For bridal packages, we may request a partial advance to confirm your date — please ask us directly when booking.",
     category: "Booking",
   },
   {
-    question: "Is parking available at the salon?",
+    question: "Where exactly is Lakmia Beauty Lounge located?",
     answer:
-      "Yes, we have dedicated two-wheeler and car parking space right outside our Thrikaripur studio.",
+      "We're on the 1st floor of Burj Trikaripur, a well-known landmark building in Trikaripur town, Kasaragod district, Kerala — easy to find and reach.",
     category: "General",
   },
   {
     question: "Do you serve both men and women?",
     answer:
-      "Absolutely — Lakmia is a full-service unisex salon with a dedicated grooming lounge for men and private bridal suites for women, ensuring comfort for every guest.",
+      "Yes — our menu includes services for everyone, from groom makeup, haircuts and waxing to bridal makeup, facials and nail care.",
+    category: "General",
+  },
+  {
+    question: "Do you treat minor skin concerns like warts?",
+    answer:
+      "Yes, we offer quick wart removal, priced per wart. Ask our team during your visit for a quick assessment.",
     category: "General",
   },
 ];
@@ -746,124 +817,125 @@ export const faqs: FaqItem[] = [
 export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-choose-your-bridal-makeup-style",
-    title: "How to Choose Your Bridal Makeup Style: A Kerala Bride's Guide",
+    title: "Bridal HD, Signature HD, Glass Skin or Airbrush — Which One Is Right for You?",
     excerpt:
-      "From traditional Kasavu elegance to modern HD glam — here's how to decide the bridal look that tells your story best.",
+      "A guide to choosing between Lakmia's four bridal makeup styles, based on your skin, outfit and the finish you want on camera.",
     coverImage:
       "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
     date: "2026-05-12",
-    author: "Fathima Rasheed",
+    author: "Jisha Korambath",
     readTime: "6 min read",
     category: "Bridal",
     tags: ["bridal makeup", "wedding tips", "Kerala bride"],
     content: [
-      "Every bride who walks into our Thrikaripur studio carries a different story — some want to honour their mother's traditional Kasavu-and-gold aesthetic, others dream of contemporary HD glam inspired by destination weddings they've seen online. Neither is more 'correct' than the other; the right bridal look is simply the one that feels most like you.",
-      "We always start with a consultation, not a brush. Skin tone, outfit colour, venue lighting (is your muhurtham indoors under tube lights, or outdoors at golden hour?), and how long you'll be wearing the look all shape our recommendation before a single product touches your face.",
-      "For most Kannur weddings, we recommend a hybrid approach: HD-finish base for camera longevity, paired with traditional touches — a defined bindi, gold-toned eye look, and a hairstyle that can hold heavy temple jewellery through hours of rituals.",
-      "A trial session, always included in our Signature Bridal Makeover, is the single best decision a bride can make. It removes wedding-day surprises and gives you the confidence to enjoy your morning instead of worrying about how you'll look in the photos.",
-      "Whatever style you choose, the goal is the same — that when you look back at your wedding photographs ten years from now, you see yourself, just more radiant.",
+      "One of the most common questions I hear at Lakmia is simple: 'Which bridal makeup should I book?' The honest answer depends on your skin, your outfit, and how you want to look in photographs versus in person.",
+      "Bridal HD Makeup is our classic choice — a reliable, high-definition finish that holds up through a long wedding day and photographs cleanly under most lighting.",
+      "Signature HD Makeup builds on that with more detailed, premium layering techniques for a more editorial, dramatic finish — a good pick if you want your bridal look to feel a notch more elevated.",
+      "Glass Skin Makeup is for brides who want to look like themselves, just glowing — a dewy, luminous, skin-first finish that's especially popular for daytime ceremonies and outdoor venues.",
+      "Airbrush Makeup uses a lightweight airbrush formula for an almost weightless, seamless finish — ideal if you want maximum wear time with minimal product feel on the skin.",
+      "Whatever you choose, come in for a consultation before your big day. Skin tone, outfit colour and venue lighting all shape the right recommendation, and it's always easier to decide with a proper conversation rather than guessing from photos online.",
     ],
   },
   {
     slug: "monsoon-hair-care-guide-kerala",
     title: "The Complete Monsoon Hair Care Guide for Kerala's Humidity",
     excerpt:
-      "Frizz, dandruff and hair fall spike every monsoon. Here's the routine our hair spa clients swear by.",
+      "Frizz and dull hair spike every monsoon. Here's the routine we recommend to our hair spa clients at Lakmia.",
     coverImage:
       "https://images.unsplash.com/photo-1519415943484-9fa1873496d4?q=80&w=1200&auto=format&fit=crop",
     date: "2026-06-02",
-    author: "Arjun Nair",
+    author: "Team Lakmia",
     readTime: "5 min read",
     category: "Hair Care",
     tags: ["monsoon hair care", "frizz control", "scalp health"],
     content: [
-      "Kannur's monsoon humidity is beautiful for the paddy fields and brutal for hair. The excess moisture in the air disrupts the hair cuticle, leading to frizz, while damp scalps become the perfect breeding ground for dandruff-causing fungus.",
-      "The first fix is almost always the shampoo routine — switch to a sulphate-free, anti-fungal shampoo during monsoon months, and resist the urge to over-wash, which strips natural oils your scalp needs to stay balanced.",
-      "A monthly hair spa session does more than add shine. The steam-and-mask process we use at Lakmia rebuilds the protein layer that humidity strips away, making hair genuinely more resistant to frizz between visits — not just temporarily smoother.",
-      "For those prone to dandruff, we recommend our herbal scalp treatment add-on alongside the standard hair spa; it targets the scalp specifically rather than just conditioning the strands.",
-      "Lastly, always dry hair fully before stepping out, even under an umbrella. Damp hair left to air-dry in humid air is the single biggest cause of monsoon frizz we see walk through our doors.",
+      "Kasaragod and Kannur's monsoon humidity is tough on hair. The excess moisture in the air disrupts the hair cuticle, leading to frizz and a dull, weighed-down look.",
+      "The first fix is often the shampoo routine — avoid over-washing during monsoon months, which strips the natural oils your scalp needs to stay balanced.",
+      "A monthly hair spa session does more than add shine. The deep-conditioning and steam process helps rebuild the protein layer that humidity strips away, making hair genuinely more resistant to frizz between visits.",
+      "If frizz is a persistent problem regardless of season, our hair protein treatment (Nanoplastia, Botox or Keratin) tackles it at a deeper level — the effects last for months, not days.",
+      "Lastly, always dry hair fully before stepping out, even under an umbrella. Damp hair left to air-dry in humid air is one of the biggest causes of monsoon frizz.",
     ],
   },
   {
-    slug: "5-facials-every-skin-type-should-know",
-    title: "5 Facials Every Skin Type Should Know Before Booking",
+    slug: "which-facial-should-you-book",
+    title: "Nine Facials, One Decision: Which Facial Should You Book at Lakmia?",
     excerpt:
-      "Not all facials are created equal. Here's how to match your skin concern to the right treatment.",
+      "From Hydra Facial to Korean Facial — a simple guide to matching your skin concern to the right treatment.",
     coverImage:
-      "https://images.unsplash.com/photo-1571875257727-256c39da42af?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop",
     date: "2026-04-18",
-    author: "Divya Prakash",
-    readTime: "7 min read",
+    author: "Team Lakmia",
+    readTime: "6 min read",
     category: "Skin Care",
     tags: ["facials", "skincare", "glow"],
     content: [
-      "One of the most common questions at our reception desk is simply: 'Which facial should I get?' The honest answer depends entirely on what your skin needs right now, not what's trending.",
-      "For dull, tired-looking skin, our Radiance Brightening Facial with vitamin-C actives gives the fastest visible lift — ideal before an event when you need results within 24 hours.",
-      "For sensitive or reactive skin, the Ayurvedic Herbal Facial is gentler, using cooling herbal pastes instead of stronger actives, making it suitable even for skin that reacts to typical salon products.",
-      "If fine lines and skin laxity are your concern, the Anti-Ageing Collagen Facial's peptide infusion works on firmness over a series of sessions rather than a single dramatic result — patience here pays off.",
-      "And before any wedding or big event covering your body, not just your face, the D-Tan Body Polishing treatment ensures even tone across your neck, arms and back for photographs.",
-      "When in doubt, book a skin consultation first — it's complimentary at Lakmia, and our therapists will always recommend based on your skin, not the price list.",
+      "One of the most common questions at our reception desk is simply: 'Which facial should I get?' The honest answer depends on what your skin needs right now, not what's trending.",
+      "For dull, tired-looking skin, our Hydra Facial or Vitamin C Facial give the fastest visible lift — ideal before an event when you need results within a day or two.",
+      "For active breakouts, Pimple Treatment targets specific spots, while our Acne Facial works more broadly on congested, acne-prone skin.",
+      "If you want a deeper reset, the Korean Facial and O3+ Facial go further — Korean Facial for that hydrated glass-skin glow, O3+ for deeper cleansing and renewal.",
+      "The Shahnaz Facial and Aroma Facial are gentler, relaxing options — great for regular upkeep rather than solving a specific concern.",
+      "And if you're getting ready for your wedding, the Bridal Glow Facial is timed and formulated specifically to have you glowing on the day itself.",
+      "When in doubt, just ask us — we'll always recommend based on your skin, not the price list.",
     ],
   },
   {
     slug: "groom-grooming-101",
-    title: "Groom Grooming 101: What Kannur's Grooms Are Booking in 2026",
+    title: "Groom Grooming 101: A Simple Pre-Wedding Checklist",
     excerpt:
-      "Grooming isn't just a haircut anymore. Here's what a modern groom's pre-wedding routine looks like.",
+      "Groom Makeup, a fresh haircut and a proper face wax — here's what a modern groom's pre-wedding routine should include.",
     coverImage:
       "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop",
     date: "2026-03-22",
-    author: "Arjun Nair",
+    author: "Team Lakmia",
     readTime: "4 min read",
     category: "Grooming",
     tags: ["groom grooming", "men's style", "wedding prep"],
     content: [
-      "We've seen a clear shift over the last few years — grooms in Kannur are now booking multi-session grooming plans months in advance, the same way brides always have.",
-      "The most requested combination in our grooming lounge is a precision haircut paired with beard sculpting done 2–3 times in the run-up to the wedding, allowing the barber to shape growth gradually rather than making one drastic change days before the event.",
-      "Skin care matters just as much. A D-tan facial a week before the wedding, paired with a hydrating treatment the day before, gives skin an even, camera-ready tone without looking obviously 'done'.",
-      "On the wedding day itself, our Groom Grooming Package wraps haircut, beard finishing, skin prep and a relaxing head massage into one unhurried session — because looking sharp shouldn't feel rushed.",
-      "Our advice to every groom: book your trial haircut at least three weeks out. It gives enough time to adjust length or style before the day that matters most.",
+      "We've noticed grooms increasingly booking their pre-wedding grooming ahead of time, the same way brides always have.",
+      "Start with an Advanced Haircut a couple of weeks before the wedding — enough time to adjust the style if needed, but fresh enough to still look sharp on the day.",
+      "A Face Wax a few days before the wedding keeps skin clean and camera-ready without looking obviously 'done'.",
+      "On the wedding day itself, our Groom Makeup service gives a natural, camera-ready finish — subtle enough for everyday confidence, polished enough for wedding photography.",
+      "Our advice to every groom: book your haircut trial a few weeks out, and don't leave your Groom Makeup booking to the last minute — wedding-day slots fill up fast.",
     ],
   },
   {
     slug: "why-hair-spa-is-not-a-luxury",
-    title: "Why Hair Spa Isn't a Luxury — It's Hair Insurance",
+    title: "Why Hair Spa Isn't a Luxury — It's Hair Maintenance",
     excerpt:
-      "Regular hair spa treatments prevent damage before it starts. Here's the science, simply explained.",
+      "Regular hair spa sessions prevent damage before it starts. Here's why we recommend it as routine care, not an occasional treat.",
     coverImage:
       "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop",
     date: "2026-02-10",
-    author: "Lakshmi Menon",
+    author: "Jisha Korambath",
     readTime: "5 min read",
     category: "Hair Care",
     tags: ["hair spa", "hair health", "self-care"],
     content: [
-      "Many clients tell us hair spa feels indulgent — something to book only before a special occasion. We'd like to reframe that thinking entirely.",
-      "Hair spa is fundamentally a maintenance treatment, not a cosmetic one. The deep-conditioning mask and steam process rebuild the protein bonds that everyday stressors — sun, salt air, pollution, styling heat — break down continuously.",
-      "Clients who book monthly hair spa sessions consistently need fewer corrective treatments later, whether that's keratin smoothening for severe frizz or protein treatments for breakage. Prevention is simply cheaper and gentler than correction.",
-      "The scalp massage component also matters more than people realise — improved circulation to hair follicles supports healthier growth cycles over time, something a single at-home oil massage rarely achieves with the same consistency.",
-      "Think of hair spa the way you think of a dental cleaning — not urgent in the moment, but the reason you avoid a much bigger problem down the line.",
+      "Many clients tell me hair spa feels indulgent — something to book only before a special occasion. I'd like to reframe that thinking.",
+      "Hair spa is fundamentally a maintenance treatment, not a cosmetic one. The deep-conditioning and steam process helps rebuild what everyday stressors — sun, styling heat, hard water — break down continuously.",
+      "Clients who book regular hair spa sessions often need fewer corrective treatments later, whether that's a full protein treatment for severe frizz or repeated clean-up visits for damage control. Prevention is simply gentler than correction.",
+      "The scalp massage component matters too — improved circulation to hair follicles can support healthier-looking hair over time.",
+      "Think of hair spa the way you think of any routine upkeep — not urgent in the moment, but the reason you avoid a bigger problem down the line.",
     ],
   },
   {
     slug: "the-lakmia-story",
-    title: "The Lakmia Story: From a Two-Chair Studio to Kannur's Bridal Landmark",
+    title: "The Lakmia Story: Certified Artistry, Built for Trikaripur",
     excerpt:
-      "How a homegrown dream in Thrikaripur became North Kerala's most trusted name in bridal beauty.",
+      "How a certified makeup artist and hairstylist built Lakmia Beauty Lounge into a trusted name in Trikaripur.",
     coverImage:
       "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop",
     date: "2026-01-15",
-    author: "Lakshmi Menon",
-    readTime: "8 min read",
+    author: "Jisha Korambath",
+    readTime: "6 min read",
     category: "Our Story",
-    tags: ["our story", "founder journey", "Thrikaripur"],
+    tags: ["our story", "founder journey", "Trikaripur"],
     content: [
-      "In 2013, Lakmia opened with two chairs, one mirror wall, and a promise I made to myself after years of training in Bangalore and Dubai — that world-class technique shouldn't require leaving home to access.",
-      "Thrikaripur wasn't an obvious choice for a 'premium' salon at the time. But I believed that the women and families here deserved the same calibre of bridal artistry as any metro city, without the travel, without the premium-city prices, without losing the cultural understanding of what a Kerala wedding actually needs.",
-      "The turning point came in 2016, when a bride we styled for a wedding in Kannur town had her photographs shared widely — not because of any marketing push, but because people simply hadn't seen that quality of bridal work from a local studio before. Enquiries started coming from Kasaragod, then Kozhikode, then families visiting from the Gulf for weddings back home.",
-      "By 2019 we had outgrown our original space and built what is now our full studio — dedicated bridal suites, a grooming lounge for the men who were increasingly asking for the same attention their partners received, and Kerala's first hair-spa bar outside the district capitals.",
-      "What hasn't changed since day one is the belief that every single client walks through our door carrying a story — a wedding, a first job, a reunion, or simply a Tuesday when they need to feel like themselves again. Our job was never just to apply product. It's to listen first, and let the technique follow.",
-      "Twelve years and thousands of transformations later, that two-chair studio's promise still holds: world-class artistry, told through a distinctly Kannur story.",
+      "I'm Jisha Korambath, a certified makeup artist and hairstylist, and the founder of Lakmia Beauty Lounge in Trikaripur.",
+      "When I started Lakmia, my goal was simple — to bring genuinely certified, professional beauty expertise to my hometown, without anyone having to travel elsewhere for it. Certification matters to me because clients deserve to know the person working on their hair or skin actually knows the craft, not just the tools.",
+      "Over time, the service menu at Lakmia has grown from the essentials — haircuts, hair spa — into a full range covering bridal makeup, protein treatments, facials, waxing, nail care and more. Every addition came from listening to what clients actually asked for.",
+      "What hasn't changed is how I approach every appointment: understanding what the client wants first, and letting technique follow. Whether it's a bride's HD makeup on her wedding morning or a quick clean-up on an ordinary Tuesday, the attention is the same.",
+      "Lakmia Beauty Lounge is on the 1st floor of Burj Trikaripur — I'd love for you to visit and experience it for yourself.",
     ],
   },
 ];

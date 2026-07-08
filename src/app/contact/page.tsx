@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Contact & Book an Appointment",
   description:
-    "Book your appointment at Lakmia Beauty Parlour, Thrikaripur, Kannur. Call, WhatsApp, or send an enquiry — our team responds within 24 hours.",
+    "Book your appointment at Lakmia Beauty Parlour, Trikaripur, Kasaragod. Call, WhatsApp, or send an enquiry — we respond within 24 hours.",
   alternates: { canonical: "/contact" },
 };
 

@@ -7,11 +7,11 @@ import { faqs } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description:
-    "Answers to common questions about bridal bookings, memberships, treatments and policies at Lakmia Beauty Parlour, Thrikaripur, Kannur.",
+    "Answers to common questions about bridal bookings, treatments and policies at Lakmia Beauty Parlour, Trikaripur, Kasaragod.",
   alternates: { canonical: "/faq" },
 };
 
-const categories = ["General", "Bridal", "Hair & Skin", "Membership", "Booking"] as const;
+const categories = ["General", "Bridal", "Hair & Skin", "Booking"] as const;
 
 export default function FaqPage() {
   const jsonLd = {

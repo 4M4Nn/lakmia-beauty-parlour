@@ -5,12 +5,12 @@ import StoryTimeline from "@/components/home/StoryTimeline";
 import TeamGrid from "@/components/about/TeamGrid";
 import ValuesGrid from "@/components/about/ValuesGrid";
 import CtaBanner from "@/components/home/CtaBanner";
-import { stats } from "@/lib/data";
+import { stats, siteConfig } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Our Story — 12 Years of Bridal Artistry in Thrikaripur",
+  title: "Our Story — Certified Bridal Artistry in Trikaripur",
   description:
-    "From a two-chair studio in 2013 to Kannur's most trusted bridal beauty destination — discover the story, values and team behind Lakmia Beauty Parlour.",
+    "Meet Jisha Korambath, certified makeup artist and hairstylist, and discover the story, values and services behind Lakmia Beauty Parlour, Trikaripur.",
   alternates: { canonical: "/about" },
 };
 
@@ -19,8 +19,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="Our Story"
-        title="A Homegrown Dream, Told Through Every Client"
-        description="Founded in 2013 in Thrikaripur, Kannur, Lakmia set out to prove that world-class bridal artistry didn't need to be found in a metro city — it could be built right here."
+        title="A Homegrown Studio, Built on Certified Craft"
+        description="Lakmia Beauty Lounge was founded in Trikaripur to bring genuinely certified, professional beauty expertise to the local community — without anyone needing to travel elsewhere for it."
         image="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1600&auto=format&fit=crop"
       />
 
@@ -29,7 +29,7 @@ export default function AboutPage() {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-xl">
             <Image
               src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=900&auto=format&fit=crop"
-              alt="Lakshmi Menon, Founder of Lakmia Beauty Parlour"
+              alt={`${siteConfig.founderName}, Founder of Lakmia Beauty Parlour`}
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 420px, 90vw"
@@ -40,24 +40,26 @@ export default function AboutPage() {
               A Note From Our Founder
             </span>
             <h2 className="mt-4 font-serif-display text-2xl font-bold text-foreground sm:text-3xl">
-              &ldquo;I didn&apos;t want my hometown to be an afterthought.&rdquo;
+              &ldquo;Certification matters — clients deserve to know their
+              artist actually knows the craft.&rdquo;
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              After years of training under celebrity stylists in Bangalore
-              and Dubai, I came home to Thrikaripur with one conviction:
-              the brides, families and everyday clients of Kannur deserved
-              the same calibre of artistry I&apos;d seen practiced anywhere
-              else in the world — without having to travel for it.
+              I&apos;m Jisha Korambath, a certified makeup artist and
+              hairstylist, and I started Lakmia Beauty Lounge right here in
+              Trikaripur with one conviction: the brides, families and
+              everyday clients of this town deserved genuinely certified,
+              professional beauty expertise close to home.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              What began as a two-chair studio in 2013 has grown into a
-              20-member team and a full bridal, hair, skin and spa studio.
-              But the belief hasn&apos;t changed — every client who walks
-              through our door is carrying a story, and our job is to
-              listen before we lift a single brush or scissor.
+              What began with the essentials — haircuts and hair spa — has
+              grown into a full menu covering bridal makeup, protein
+              treatments, facials, waxing and nail care. But the belief
+              hasn&apos;t changed — every client who walks through our door
+              is carrying a story, and my job is to listen before I lift a
+              single brush or comb.
             </p>
             <p className="mt-6 font-serif-display text-lg font-semibold text-primary">
-              — Lakshmi Menon, Founder & Creative Director
+              — {siteConfig.founderName}, {siteConfig.founderTitle}
             </p>
           </div>
         </div>

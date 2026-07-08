@@ -29,8 +29,8 @@ export default function Footer() {
               Lakmia
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              {siteConfig.tagline} — Thrikaripur, Kannur&apos;s home for
-              bridal artistry, hair, skin and spa since 2013.
+              {siteConfig.tagline} — certified bridal, hair, skin and nail
+              care in Trikaripur, Kasaragod.
             </p>
             <div className="mt-5 flex items-center gap-3">
               {socialLinks.map((s) => {
@@ -126,7 +126,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-3 text-xs text-muted-foreground sm:flex-row">
           <p>© {year} Lakmia Beauty Parlour. All rights reserved.</p>
-          <p>Crafted with care in Thrikaripur, Kannur.</p>
+          <p>Crafted with care in Trikaripur, Kasaragod.</p>
         </div>
       </div>
     </footer>

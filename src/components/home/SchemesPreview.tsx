@@ -12,9 +12,9 @@ export default function SchemesPreview() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
       <SectionHeading
-        eyebrow="Schemes & Memberships"
-        title="Plans Designed Around Your Story"
-        description="Whether it's one big day or a year of self-care, we have a plan that fits."
+        eyebrow="Schemes & Bundles"
+        title="Packages Designed Around Your Story"
+        description="Whether it's a quick glow-up or your full wedding-day bundle, we have a package that fits."
       />
 
       <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">

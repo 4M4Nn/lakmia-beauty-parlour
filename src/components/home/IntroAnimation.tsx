@@ -106,7 +106,7 @@ export default function IntroAnimation() {
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
               className="text-xs font-medium uppercase text-accent"
             >
-              Thrikaripur &middot; Kannur
+              Trikaripur &middot; Kasaragod
             </motion.span>
 
             <motion.h1
