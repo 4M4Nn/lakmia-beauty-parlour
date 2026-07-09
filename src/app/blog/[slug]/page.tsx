@@ -6,7 +6,8 @@ import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import BlogCard from "@/components/shared/BlogCard";
 import CtaBanner from "@/components/home/CtaBanner";
-import { blogPosts, siteConfig } from "@/lib/data";
+import { siteConfig } from "@/lib/data";
+import { getAllBlogPosts } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -14,12 +15,12 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
+  return getAllBlogPosts().map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = getAllBlogPosts().find((p) => p.slug === slug);
   if (!post) return {};
 
   return {
@@ -38,6 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
+  const blogPosts = getAllBlogPosts();
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
 

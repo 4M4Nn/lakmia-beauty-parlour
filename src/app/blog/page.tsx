@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/shared/PageHero";
 import BlogCard from "@/components/shared/BlogCard";
 import CtaBanner from "@/components/home/CtaBanner";
-import { blogPosts } from "@/lib/data";
+import { getAllBlogPosts } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "The Journal — Beauty Tips & Stories",
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const blogPosts = getAllBlogPosts();
   return (
     <>
       <PageHero
