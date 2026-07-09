@@ -9,9 +9,9 @@ export default function ShopVideoSection() {
         description="A look inside our Trikaripur studio and the day we opened our doors."
       />
 
-      <div className="mt-10 overflow-hidden rounded-[2rem] border border-border shadow-xl">
+      <div className="mx-auto mt-10 max-w-sm overflow-hidden rounded-[2rem] border border-border shadow-xl">
         <video
-          className="aspect-video w-full bg-black"
+          className="aspect-[9/16] w-full bg-black object-cover"
           controls
           preload="metadata"
           playsInline
