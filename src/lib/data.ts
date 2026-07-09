@@ -607,6 +607,46 @@ export const testimonials: Testimonial[] = [
 
 export const galleryItems: GalleryItem[] = [
   {
+    image: "/media/inauguration/lakmia-ribbon-cutting-1.jpeg",
+    alt: "Ribbon-cutting ceremony at the opening of Lakmia Beauty Lounge, Trikaripur",
+    category: "Inauguration",
+  },
+  {
+    image: "/media/inauguration/lakmia-lamp-lighting.jpeg",
+    alt: "Traditional lamp-lighting ceremony at Lakmia Beauty Lounge's inauguration",
+    category: "Inauguration",
+  },
+  {
+    image: "/media/inauguration/lakmia-family-portrait.jpeg",
+    alt: "The Korambath family celebrating the opening of Lakmia Beauty Lounge",
+    category: "Inauguration",
+  },
+  {
+    image: "/media/inauguration/lakmia-family-group.jpeg",
+    alt: "Family and guests inside Lakmia Beauty Lounge on opening day",
+    category: "Inauguration",
+  },
+  {
+    image: "/media/inauguration/lakmia-inauguration-guests.jpeg",
+    alt: "Guests gathered for the Lakmia Beauty Lounge inauguration ceremony",
+    category: "Inauguration",
+  },
+  {
+    image: "/media/inauguration/lakmia-ribbon-cutting-2.jpeg",
+    alt: "Chief guest cutting the ribbon at Lakmia Beauty Lounge's launch",
+    category: "Inauguration",
+  },
+  {
+    image: "/media/inauguration/lakmia-team-portrait.jpeg",
+    alt: "Portrait inside the Lakmia Beauty Lounge studio",
+    category: "Salon",
+  },
+  {
+    image: "/media/inauguration/lakmia-salon-interior.jpeg",
+    alt: "Lakmia Beauty Lounge pedicure and styling stations",
+    category: "Salon",
+  },
+  {
     image:
       "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop",
     alt: "Bridal HD makeup application in progress",

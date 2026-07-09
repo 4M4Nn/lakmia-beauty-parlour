@@ -86,7 +86,7 @@ export interface FaqItem {
 export interface GalleryItem {
   image: string;
   alt: string;
-  category: "Bridal" | "Hair" | "Facial" | "Salon" | "Nails";
+  category: "Bridal" | "Hair" | "Facial" | "Salon" | "Nails" | "Inauguration";
 }
 
 export interface SocialLink {

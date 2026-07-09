@@ -8,16 +8,16 @@ const INTRO_KEY = "lakmia-intro-seen";
 
 const reels = [
   {
-    src: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
-    alt: "Bridal makeup artistry",
+    src: "/media/inauguration/lakmia-ribbon-cutting-1.jpeg",
+    alt: "Lakmia Beauty Lounge inauguration ribbon-cutting",
   },
   {
-    src: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop",
-    alt: "Precision hair styling",
+    src: "/media/inauguration/lakmia-lamp-lighting.jpeg",
+    alt: "Traditional lamp-lighting ceremony at Lakmia Beauty Lounge",
   },
   {
-    src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
-    alt: "Spa and skin therapy",
+    src: "/media/inauguration/lakmia-salon-interior.jpeg",
+    alt: "Inside the Lakmia Beauty Lounge studio",
   },
 ];
 

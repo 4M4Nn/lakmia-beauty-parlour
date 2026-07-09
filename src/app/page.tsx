@@ -1,6 +1,7 @@
 import IntroAnimation from "@/components/home/IntroAnimation";
 import Hero from "@/components/home/Hero";
 import StoryIntro from "@/components/home/StoryIntro";
+import ShopVideoSection from "@/components/shared/ShopVideoSection";
 import ServicesShowcase from "@/components/home/ServicesShowcase";
 import StoryTimeline from "@/components/home/StoryTimeline";
 import GalleryPreview from "@/components/home/GalleryPreview";
@@ -16,6 +17,7 @@ export default function Home() {
       <IntroAnimation />
       <Hero />
       <StoryIntro />
+      <ShopVideoSection />
       <ServicesShowcase />
       <StoryTimeline />
       <GalleryPreview />
