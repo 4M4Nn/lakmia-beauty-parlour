@@ -17,6 +17,9 @@ type AgentFrontmatter = {
   secondaryKeywords?: string[];
   publishedAt?: string;
   faq?: { question: string; answer: string }[];
+  coverImage?: string;
+  coverImageAlt?: string;
+  coverImageCredit?: { name: string; profileUrl?: string; photoUrl?: string };
 };
 
 function markdownToParagraphs(markdown: string): string[] {
@@ -47,7 +50,9 @@ function getAgentBlogPosts(): BlogPost[] {
         title: fm.title,
         excerpt: fm.metaDescription || paragraphs[0] || "",
         content: paragraphs,
-        coverImage: DEFAULT_COVER_IMAGE,
+        coverImage: fm.coverImage || DEFAULT_COVER_IMAGE,
+        coverImageAlt: fm.coverImageAlt,
+        coverImageCredit: fm.coverImageCredit,
         date: fm.publishedAt || new Date().toISOString().slice(0, 10),
         author: siteConfig.founderName,
         readTime: estimateReadTime(paragraphs),

@@ -18,7 +18,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
       <div className="relative aspect-[16/10] w-full overflow-hidden">
         <Image
           src={post.coverImage}
-          alt={post.title}
+          alt={post.coverImageAlt || post.title}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-110"
           sizes="(min-width: 1024px) 380px, 90vw"

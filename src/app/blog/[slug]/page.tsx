@@ -78,13 +78,23 @@ export default async function BlogPostPage({ params }: Props) {
         <section className="relative flex min-h-[40vh] items-end overflow-hidden">
           <Image
             src={post.coverImage}
-            alt={post.title}
+            alt={post.coverImageAlt || post.title}
             fill
             priority
             className="object-cover"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#2b1420]/90 via-[#2b1420]/50 to-[#2b1420]/20" />
+          {post.coverImageCredit && (
+            <a
+              href={post.coverImageCredit.photoUrl || post.coverImageCredit.profileUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="absolute bottom-2 right-3 z-10 text-[10px] text-white/60 hover:text-white/90"
+            >
+              Photo by {post.coverImageCredit.name} on Unsplash
+            </a>
+          )}
           <div className="relative mx-auto w-full max-w-3xl px-5 pb-12 pt-24 sm:px-8">
             <Link
               href="/blog"

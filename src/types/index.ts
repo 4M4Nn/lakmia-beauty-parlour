@@ -58,6 +58,8 @@ export interface BlogPost {
   excerpt: string;
   content: string[];
   coverImage: string;
+  coverImageAlt?: string;
+  coverImageCredit?: { name: string; profileUrl?: string; photoUrl?: string };
   date: string;
   author: string;
   readTime: string;
