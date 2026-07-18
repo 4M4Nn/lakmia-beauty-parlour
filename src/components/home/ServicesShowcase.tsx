@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import SectionHeading from "@/components/shared/SectionHeading";
 import ServiceCard from "@/components/shared/ServiceCard";
+import RevealGroup from "@/components/motion/RevealGroup";
 import { services } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
@@ -10,7 +11,7 @@ export default function ServicesShowcase() {
   const featured = services.filter((s) => s.popular);
 
   return (
-    <section className="bg-secondary/30 py-20">
+    <section className="bg-secondary/30 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Signature Services"
@@ -18,11 +19,11 @@ export default function ServicesShowcase() {
           description="From bridal transformations to everyday self-care, every service at Lakmia is delivered with editorial-level precision and genuine Kerala warmth."
         />
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {featured.map((service) => (
             <ServiceCard key={service.slug} service={service} />
           ))}
-        </div>
+        </RevealGroup>
 
         <div className="mt-12 flex justify-center">
           <Link

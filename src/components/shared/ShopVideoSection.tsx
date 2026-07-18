@@ -1,15 +1,22 @@
 import SectionHeading from "@/components/shared/SectionHeading";
+import Reveal from "@/components/motion/Reveal";
 
 export default function ShopVideoSection() {
   return (
-    <section className="mx-auto max-w-5xl px-5 py-20 sm:px-8">
+    <section className="mx-auto max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
       <SectionHeading
         eyebrow="Watch Our Story"
         title="Step Inside Lakmia Beauty Lounge"
         description="A look inside our Trikaripur studio and the day we opened our doors."
       />
 
-      <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-[2rem] border border-border shadow-xl">
+      <Reveal
+        direction="up"
+        distance={30}
+        scale={0.96}
+        duration={1}
+        className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-[2rem] border border-border shadow-xl"
+      >
         <video
           className="aspect-video w-full bg-black object-cover"
           controls
@@ -19,7 +26,7 @@ export default function ShopVideoSection() {
         >
           <source src="/media/video/lakmia-shop-reel.mp4" type="video/mp4" />
         </video>
-      </div>
+      </Reveal>
     </section>
   );
 }

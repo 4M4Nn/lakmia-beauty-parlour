@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import SectionHeading from "@/components/shared/SectionHeading";
 import TiltCard from "@/components/ui/TiltCard";
+import RevealGroup from "@/components/motion/RevealGroup";
 import { galleryItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
@@ -11,14 +12,17 @@ export default function GalleryPreview() {
   const preview = galleryItems.slice(0, 6);
 
   return (
-    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
+    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
       <SectionHeading
         eyebrow="Moments We&apos;ve Crafted"
         title="A Glimpse Into Our World"
         description="Every frame is a story — a bride's first glance in the mirror, a fresh cut catching the light, a moment of quiet calm."
       />
 
-      <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6">
+      <RevealGroup
+        className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6"
+        stagger={0.08}
+      >
         {preview.map((item, i) => (
           <TiltCard
             key={item.image}
@@ -43,7 +47,7 @@ export default function GalleryPreview() {
             </div>
           </TiltCard>
         ))}
-      </div>
+      </RevealGroup>
 
       <div className="mt-12 flex justify-center">
         <Link

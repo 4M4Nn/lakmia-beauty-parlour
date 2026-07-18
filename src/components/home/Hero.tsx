@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { ArrowRight, Sparkles, Star } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import TiltCard from "@/components/ui/TiltCard";
+import SplitHeading from "@/components/motion/SplitHeading";
 import { cn } from "@/lib/utils";
 import { stats } from "@/lib/data";
 
@@ -23,10 +24,14 @@ export default function Hero() {
             Thrikaripur&apos;s Premier Beauty Destination
           </span>
 
-          <h1 className="mt-6 font-serif-display text-4xl font-bold leading-[1.1] text-foreground sm:text-5xl lg:text-6xl">
+          <SplitHeading
+            as="h1"
+            start="top 100%"
+            className="text-display mt-6 font-serif-display text-5xl font-bold text-foreground sm:text-6xl lg:text-7xl"
+          >
             Every Bride, Every Story,{" "}
             <span className="text-gradient-pink">Beautifully Told</span>
-          </h1>
+          </SplitHeading>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Lakmia Beauty Parlour turns Trikaripur&apos;s biggest moments —

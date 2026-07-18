@@ -32,7 +32,7 @@ export default function Navbar() {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "bg-white/90 backdrop-blur-md shadow-[0_2px_20px_rgba(214,51,108,0.08)] border-b border-border"
+          ? "glass shadow-[0_2px_20px_rgba(214,51,108,0.08)]"
           : "bg-transparent"
       )}
     >

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/shared/PageHero";
 import FaqAccordionList from "@/components/shared/FaqAccordionList";
 import CtaBanner from "@/components/home/CtaBanner";
+import Reveal from "@/components/motion/Reveal";
 import { faqs } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -45,14 +46,14 @@ export default function FaqPage() {
           const items = faqs.filter((f) => f.category === category);
           if (items.length === 0) return null;
           return (
-            <div key={category} className="mb-12 last:mb-0">
+            <Reveal key={category} direction="up" distance={24} className="mb-12 last:mb-0">
               <h2 className="font-serif-display text-xl font-semibold text-primary">
                 {category}
               </h2>
               <div className="mt-4">
                 <FaqAccordionList items={items} />
               </div>
-            </div>
+            </Reveal>
           );
         })}
       </section>

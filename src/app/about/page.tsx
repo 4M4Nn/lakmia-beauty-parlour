@@ -6,6 +6,9 @@ import TeamGrid from "@/components/about/TeamGrid";
 import ValuesGrid from "@/components/about/ValuesGrid";
 import ShopVideoSection from "@/components/shared/ShopVideoSection";
 import CtaBanner from "@/components/home/CtaBanner";
+import Reveal from "@/components/motion/Reveal";
+import RevealGroup from "@/components/motion/RevealGroup";
+import Parallax from "@/components/motion/Parallax";
 import { stats, siteConfig } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -27,16 +30,21 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-5xl px-5 py-20 sm:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1fr_1.2fr]">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-xl">
-            <Image
-              src="/media/inauguration/lakmia-ribbon-cutting-1.jpeg"
-              alt="The ribbon-cutting ceremony at Lakmia Beauty Lounge's inauguration in Trikaripur"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 420px, 90vw"
-            />
-          </div>
-          <div>
+          <Reveal direction="left">
+            <Parallax
+              className="relative aspect-[4/5] w-full rounded-[2rem] shadow-xl"
+              speed={0.12}
+            >
+              <Image
+                src="/media/inauguration/lakmia-ribbon-cutting-1.jpeg"
+                alt="The ribbon-cutting ceremony at Lakmia Beauty Lounge's inauguration in Trikaripur"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 420px, 90vw"
+              />
+            </Parallax>
+          </Reveal>
+          <Reveal direction="right">
             <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
               A Note From Our Founder
             </span>
@@ -62,10 +70,10 @@ export default function AboutPage() {
             <p className="mt-6 font-serif-display text-lg font-semibold text-primary">
               — {siteConfig.founderName}, {siteConfig.founderTitle}
             </p>
-          </div>
+          </Reveal>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 gap-6 rounded-2xl border border-border bg-secondary/30 p-8 sm:grid-cols-4">
+        <RevealGroup className="mt-16 grid grid-cols-2 gap-6 rounded-2xl border border-border bg-secondary/30 p-8 sm:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
               <p className="font-serif-display text-2xl font-bold text-primary sm:text-3xl">
@@ -75,13 +83,16 @@ export default function AboutPage() {
               <p className="mt-1 text-xs text-muted-foreground">{s.label}</p>
             </div>
           ))}
-        </div>
+        </RevealGroup>
 
         <div className="mt-16">
           <h3 className="text-center font-serif-display text-2xl font-bold text-foreground">
             Opening Day at Lakmia Beauty Lounge
           </h3>
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <RevealGroup
+            stagger={0.08}
+            className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4"
+          >
             {[
               {
                 src: "/media/inauguration/lakmia-family-portrait.jpeg",
@@ -113,7 +124,7 @@ export default function AboutPage() {
                 />
               </div>
             ))}
-          </div>
+          </RevealGroup>
         </div>
       </section>
 

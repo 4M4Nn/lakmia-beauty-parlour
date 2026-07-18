@@ -1,17 +1,18 @@
 import Image from "next/image";
 import SectionHeading from "@/components/shared/SectionHeading";
+import RevealGroup from "@/components/motion/RevealGroup";
 import { teamMembers } from "@/lib/data";
 
 export default function TeamGrid() {
   return (
-    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
+    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
       <SectionHeading
         eyebrow="Meet the Artists"
         title="The Hands Behind Every Transformation"
         description="A team of trained colourists, bridal artists, therapists and groomers united by one philosophy — technique first, story always."
       />
 
-      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {teamMembers.map((member) => (
           <div key={member.name} className="text-center">
             <div className="relative mx-auto aspect-square w-full max-w-[220px] overflow-hidden rounded-2xl shadow-md">
@@ -37,7 +38,7 @@ export default function TeamGrid() {
             </p>
           </div>
         ))}
-      </div>
+      </RevealGroup>
     </section>
   );
 }

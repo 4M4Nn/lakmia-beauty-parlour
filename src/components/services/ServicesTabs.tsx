@@ -2,6 +2,7 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ServiceCard from "@/components/shared/ServiceCard";
+import RevealGroup from "@/components/motion/RevealGroup";
 import type { ServiceCategoryGroup } from "@/types";
 
 export default function ServicesTabs({
@@ -28,11 +29,14 @@ export default function ServicesTabs({
           <p className="mx-auto max-w-xl text-center text-sm text-muted-foreground">
             {g.tagline}
           </p>
-          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <RevealGroup
+            start="top 90%"
+            className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
             {g.services.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
-          </div>
+          </RevealGroup>
         </TabsContent>
       ))}
     </Tabs>

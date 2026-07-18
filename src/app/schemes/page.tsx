@@ -5,6 +5,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PageHero from "@/components/shared/PageHero";
 import CtaBanner from "@/components/home/CtaBanner";
+import RevealGroup from "@/components/motion/RevealGroup";
 import { schemes } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
@@ -43,7 +44,7 @@ export default function SchemesPage() {
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <RevealGroup className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {schemes.map((scheme) => (
             <div
               key={scheme.slug}
@@ -101,7 +102,7 @@ export default function SchemesPage() {
               </Link>
             </div>
           ))}
-        </div>
+        </RevealGroup>
       </section>
 
       <CtaBanner />

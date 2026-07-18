@@ -3,6 +3,7 @@ import { ArrowRight, Check } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import SectionHeading from "@/components/shared/SectionHeading";
+import RevealGroup from "@/components/motion/RevealGroup";
 import { schemes } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
@@ -10,21 +11,21 @@ export default function SchemesPreview() {
   const preview = schemes.slice(0, 3);
 
   return (
-    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
+    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
       <SectionHeading
         eyebrow="Schemes & Bundles"
         title="Packages Designed Around Your Story"
         description="Whether it's a quick glow-up or your full wedding-day bundle, we have a package that fits."
       />
 
-      <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+      <RevealGroup className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
         {preview.map((scheme) => (
           <div
             key={scheme.slug}
             className={cn(
               "relative flex flex-col rounded-2xl border p-7 shadow-sm",
               scheme.highlight
-                ? "border-primary bg-white shadow-xl shadow-primary/15 md:-translate-y-3"
+                ? "glass-card border-primary shadow-xl shadow-primary/15 md:-translate-y-3"
                 : "border-border bg-card"
             )}
           >
@@ -74,7 +75,7 @@ export default function SchemesPreview() {
             </Link>
           </div>
         ))}
-      </div>
+      </RevealGroup>
 
       <div className="mt-12 flex justify-center">
         <Link

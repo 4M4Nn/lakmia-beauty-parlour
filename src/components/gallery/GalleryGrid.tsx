@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import TiltCard from "@/components/ui/TiltCard";
+import RevealGroup from "@/components/motion/RevealGroup";
 import { cn } from "@/lib/utils";
 import type { GalleryItem } from "@/types";
 
@@ -34,7 +35,12 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
         ))}
       </div>
 
-      <div className="mt-10 columns-2 gap-4 sm:columns-3 sm:gap-6">
+      <RevealGroup
+        key={active}
+        start="top 90%"
+        stagger={0.06}
+        className="mt-10 columns-2 gap-4 sm:columns-3 sm:gap-6"
+      >
         {filtered.map((item) => (
           <TiltCard
             key={item.image}
@@ -55,7 +61,7 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
             </div>
           </TiltCard>
         ))}
-      </div>
+      </RevealGroup>
     </div>
   );
 }

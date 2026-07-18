@@ -1,5 +1,6 @@
 import { Heart, Sparkles, Leaf, Award } from "lucide-react";
 import SectionHeading from "@/components/shared/SectionHeading";
+import RevealGroup from "@/components/motion/RevealGroup";
 
 const values = [
   {
@@ -30,14 +31,14 @@ const values = [
 
 export default function ValuesGrid() {
   return (
-    <section className="bg-secondary/30 py-20">
+    <section className="bg-secondary/30 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="What Guides Us"
           title="The Values Behind Every Appointment"
         />
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((v) => (
             <div
               key={v.title}
@@ -54,7 +55,7 @@ export default function ValuesGrid() {
               </p>
             </div>
           ))}
-        </div>
+        </RevealGroup>
       </div>
     </section>
   );

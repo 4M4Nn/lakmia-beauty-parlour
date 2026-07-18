@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import ContactForm from "@/components/contact/ContactForm";
+import Reveal from "@/components/motion/Reveal";
 import { siteConfig } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -27,7 +28,7 @@ export default function ContactPage() {
 
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-          <div>
+          <Reveal direction="left">
             <h2 className="font-serif-display text-2xl font-bold text-foreground">
               Send Us an Enquiry
             </h2>
@@ -38,9 +39,9 @@ export default function ContactPage() {
             <div className="mt-8">
               <ContactForm />
             </div>
-          </div>
+          </Reveal>
 
-          <div>
+          <Reveal direction="right">
             <h2 className="font-serif-display text-2xl font-bold text-foreground">
               Visit Our Studio
             </h2>
@@ -84,7 +85,7 @@ export default function ContactPage() {
                 title="Lakmia Beauty Parlour location map"
               />
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
     </>

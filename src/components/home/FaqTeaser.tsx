@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import SectionHeading from "@/components/shared/SectionHeading";
 import FaqAccordionList from "@/components/shared/FaqAccordionList";
+import Reveal from "@/components/motion/Reveal";
 import { faqs } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
@@ -10,15 +11,15 @@ export default function FaqTeaser() {
   const preview = faqs.slice(0, 5);
 
   return (
-    <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8">
+    <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8 sm:py-28">
       <SectionHeading
         eyebrow="Frequently Asked"
         title="Questions Brides & Clients Ask Us Most"
       />
 
-      <div className="mt-10">
+      <Reveal direction="up" distance={24} className="mt-12">
         <FaqAccordionList items={preview} />
-      </div>
+      </Reveal>
 
       <div className="mt-10 flex justify-center">
         <Link
